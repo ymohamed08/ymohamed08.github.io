@@ -12,7 +12,7 @@ baseurl: ''
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Europe/Stockholm
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -22,18 +22,16 @@ title: Youssef Mohamed                         # the main title
 tagline: Doctoral Student at KTH Sweden   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  This is my website and everything you need to know.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
 
 github:
-  username: github_username             # change to your github username
+  username: ymohamed08            # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: ymohamed08             # change to your twitter username
 
 social:
   # Change to your full name.
@@ -81,7 +79,7 @@ theme_mode:   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
+avatar: home/youssef/ymohamed08.github.io/images/myimage.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
