@@ -1,6 +1,6 @@
 ---
 title: Publications
-icon: fas fa-info
+icon: https://icon-library.com/icon/publication-icon-17.html.html
 order: 5
 ---
 
