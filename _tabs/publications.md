@@ -1,7 +1,7 @@
 ---
 title: Publications
 icon: /assets/images/publication.jpg
-order: 5
+order: 6
 ---
 
 - [Automatic Frustration Detection Using Thermal Imaging](/assets/docs/HRI2022.pdf)
