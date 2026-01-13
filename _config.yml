@@ -19,10 +19,11 @@ timezone: Europe/Stockholm
 
 title: Youssef Mohamed                         # the main title
 
-tagline: Doctoral Student at KTH Sweden   # it will display as the sub-title
+tagline: Social AI Researcher & Entrepreneur   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  This is my website and everything you need to know.
+  AI Project Portfolio showcasing innovative solutions in Computer Vision, Machine Learning, and Conversational AI. 
+  Featuring Vizioneer (camera analytics), Pokamind (adaptive learning), and HighlightsHub (sports analytics).
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://ymohamed08.github.io'
@@ -37,14 +38,14 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Youssef Mohamed
-  email: ymo@kth.se             # change to your email address
+  email: youssefezzat12@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/youssefmohamed-phd/
     - https://twitter.com/ymohamed08      # change to your twitter homepage
     - https://github.com/ymohamed08       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
