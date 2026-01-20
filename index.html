@@ -6,17 +6,17 @@
     <meta name="description" content="Dr. Youssef Mohamed - AI Project Portfolio. Showcasing innovative AI solutions in Computer Vision, Machine Learning, and Conversational AI.">
     <meta name="keywords" content="AI, Machine Learning, Computer Vision, NLP, Social AI, Youssef Mohamed">
     <meta name="author" content="Dr. Youssef Mohamed">
-    
+
     <title>Dr. Youssef Mohamed - AI Project Portfolio</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
     <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png">
-    
+
     <!-- Custom Portfolio CSS -->
     <link rel="stylesheet" href="/assets/css/portfolio.css">
-    
+
     <!-- Ionicons for icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -26,33 +26,36 @@
     <!-- Hero Section -->
     <section class="portfolio-hero">
         <div class="hero-content">
-            <span class="hero-tag">AI Portfolio</span>
+            <span class="hero-tag">
+                <span class="tag-dot"></span>
+                AI Portfolio
+            </span>
             <h1 class="hero-title">Dr. Youssef Mohamed</h1>
-            <p class="hero-subtitle">Social AI Researcher & Entrepreneur</p>
+            <p class="hero-subtitle" id="typed-subtitle">Social AI Researcher & Entrepreneur</p>
             <p class="hero-description">
-                PhD in Social AI from KTH Royal Institute of Technology. Specializing in Human-Robot Interaction, 
-                Affective Computing, Computer Vision, and Applied Machine Learning. Building adaptive AI systems 
+                PhD in Social AI from KTH Royal Institute of Technology. Specializing in Human-Robot Interaction,
+                Affective Computing, Computer Vision, and Applied Machine Learning. Building adaptive AI systems
                 for real-time human state detection and multi-modal analysis.
             </p>
-            
+
             <div class="hero-contact">
-                <div class="contact-item">
+                <div class="contact-item" onclick="copyToClipboard('youssefezzat12@gmail.com', this)">
                     <ion-icon name="mail-outline"></ion-icon>
                     <span>youssefezzat12@gmail.com</span>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item" onclick="copyToClipboard('+46 790489221', this)">
                     <ion-icon name="call-outline"></ion-icon>
                     <span>+46 790489221</span>
                 </div>
-                <div class="contact-item">
+                <a href="https://www.linkedin.com/in/youssefmohamed-phd/" target="_blank" class="contact-item">
                     <ion-icon name="logo-linkedin"></ion-icon>
-                    <a href="https://www.linkedin.com/in/youssefmohamed-phd/" target="_blank" style="color: inherit; text-decoration: none;">LinkedIn Profile</a>
-                </div>
+                    <span>LinkedIn Profile</span>
+                </a>
             </div>
-            
-            <div class="scroll-indicator">
-                <ion-icon name="chevron-down-outline" style="font-size: 2rem; color: var(--accent-purple);"></ion-icon>
-            </div>
+
+            <a href="#projects" class="scroll-indicator">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
         </div>
     </section>
 
@@ -62,18 +65,18 @@
             <span class="section-tag">Featured Projects</span>
             <h2 class="section-title">AI Solutions Portfolio</h2>
             <p class="section-description">
-                Three cutting-edge AI projects demonstrating expertise in computer vision, 
+                Cutting-edge AI projects demonstrating expertise in computer vision,
                 natural language processing, and cloud-native architectures.
             </p>
         </div>
 
         <div class="projects-grid">
-            
+
             <!-- Project 1: Vizioneer -->
-            <article class="project-card">
+            <article class="project-card" data-project="1">
                 <div class="project-header">
                     <div class="project-title-group">
-                        <span class="project-tag">Computer Vision • GCP</span>
+                        <span class="project-tag">Computer Vision &bull; GCP</span>
                         <h3 class="project-title">Vizioneer</h3>
                         <p class="project-subtitle">AI-Powered Camera Analytics for Dark Stores & Cloud Kitchens</p>
                     </div>
@@ -82,14 +85,14 @@
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                 </div>
-                
+
                 <p class="project-description">
-                    Vizioneer transforms existing camera infrastructure into a real-time operational command center 
-                    for rapid commerce. The system uses state-of-the-art Vision Language Models (VLMs) and machine 
-                    vision algorithms to track orders, optimize picking routes, and detect bottlenecks in dark store 
+                    Vizioneer transforms existing camera infrastructure into a real-time operational command center
+                    for rapid commerce. The system uses state-of-the-art Vision Language Models (VLMs) and machine
+                    vision algorithms to track orders, optimize picking routes, and detect bottlenecks in dark store
                     and cloud kitchen environments—all from existing cameras with zero additional hardware.
                 </p>
-                
+
                 <div class="tech-stack">
                     <h4 class="tech-stack-title">Technology Stack</h4>
                     <div class="tech-tags">
@@ -104,7 +107,7 @@
                         <span class="tech-tag">Tracking Algorithms</span>
                     </div>
                 </div>
-                
+
                 <div class="key-features">
                     <h4 class="tech-stack-title">Key Features</h4>
                     <div class="features-grid">
@@ -126,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-metrics">
                     <div class="metric">
                         <div class="metric-value">40%</div>
@@ -141,28 +144,28 @@
                         <div class="metric-label">Setup Time</div>
                     </div>
                 </div>
-                
+
                 <div class="project-screenshots">
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/vizioneer-hero.png" alt="Vizioneer Dashboard - 3D Visualization">
+                        <img src="/assets/img/portfolio/vizioneer-hero.png" alt="Vizioneer Dashboard - 3D Visualization" loading="lazy">
                         <div class="screenshot-label">AI-Powered Analytics Dashboard</div>
                     </div>
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/vizioneer-solutions.png" alt="Vizioneer Dark Store Solutions">
+                        <img src="/assets/img/portfolio/vizioneer-solutions.png" alt="Vizioneer Dark Store Solutions" loading="lazy">
                         <div class="screenshot-label">Dark Store Optimization</div>
                     </div>
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/vizioneer-platform.png" alt="Vizioneer Platform Features">
+                        <img src="/assets/img/portfolio/vizioneer-platform.png" alt="Vizioneer Platform Features" loading="lazy">
                         <div class="screenshot-label">Platform Architecture</div>
                     </div>
                 </div>
             </article>
 
             <!-- Project 2: Pokamind -->
-            <article class="project-card">
+            <article class="project-card" data-project="2">
                 <div class="project-header">
                     <div class="project-title-group">
-                        <span class="project-tag">LLMs • Behavioral AI • GCP</span>
+                        <span class="project-tag">LLMs &bull; Behavioral AI &bull; GCP</span>
                         <h3 class="project-title">Pokamind</h3>
                         <p class="project-subtitle">AI-Native Adaptive Learning & Leadership Development Platform</p>
                     </div>
@@ -171,15 +174,15 @@
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                 </div>
-                
+
                 <p class="project-description">
-                    Pokamind is an AI-powered skill-training platform that delivers personalized leadership development 
-                    through realistic role-play scenarios and multi-modal behavioral analysis. The system analyzes 
-                    body language, voice patterns, and communication keywords in real-time to provide objective 
-                    insights and accelerate skill development. Built on enterprise-grade GCP architecture with 
+                    Pokamind is an AI-powered skill-training platform that delivers personalized leadership development
+                    through realistic role-play scenarios and multi-modal behavioral analysis. The system analyzes
+                    body language, voice patterns, and communication keywords in real-time to provide objective
+                    insights and accelerate skill development. Built on enterprise-grade GCP architecture with
                     Kubernetes orchestration, achieving 99.9% uptime.
                 </p>
-                
+
                 <div class="tech-stack">
                     <h4 class="tech-stack-title">Technology Stack</h4>
                     <div class="tech-tags">
@@ -196,7 +199,7 @@
                         <span class="tech-tag">OAuth 2.0</span>
                     </div>
                 </div>
-                
+
                 <div class="key-features">
                     <h4 class="tech-stack-title">AI Components</h4>
                     <div class="features-grid">
@@ -218,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-metrics">
                     <div class="metric">
                         <div class="metric-value">4x</div>
@@ -237,24 +240,24 @@
                         <div class="metric-label">Uptime</div>
                     </div>
                 </div>
-                
+
                 <div class="project-screenshots">
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/pokamind-hero.png" alt="Pokamind Platform Overview">
+                        <img src="/assets/img/portfolio/pokamind-hero.png" alt="Pokamind Platform Overview" loading="lazy">
                         <div class="screenshot-label">AI-Native Learning Platform</div>
                     </div>
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/pokamind-features.png" alt="Pokamind Enterprise Features">
+                        <img src="/assets/img/portfolio/pokamind-features.png" alt="Pokamind Enterprise Features" loading="lazy">
                         <div class="screenshot-label">Enterprise Security & Scalability</div>
                     </div>
                 </div>
             </article>
 
             <!-- Project 3: HighlightsHub -->
-            <article class="project-card">
+            <article class="project-card" data-project="3">
                 <div class="project-header">
                     <div class="project-title-group">
-                        <span class="project-tag">Computer Vision • Tracking AI • GCP</span>
+                        <span class="project-tag">Computer Vision &bull; Tracking AI &bull; GCP</span>
                         <h3 class="project-title">HighlightsHub</h3>
                         <p class="project-subtitle">Automatic Goal Detection & Sports Analytics Platform</p>
                     </div>
@@ -263,15 +266,15 @@
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                 </div>
-                
+
                 <p class="project-description">
-                    HighlightsHub leverages state-of-the-art computer vision and object tracking AI to automatically 
-                    detect goals in casual football games and generate professional highlight reels. The system uses 
-                    fine-tuned vision models for precise event detection, player identification, and action tracking. 
-                    Built on a full Google Cloud Platform architecture with Firebase integration for real-time 
+                    HighlightsHub leverages state-of-the-art computer vision and object tracking AI to automatically
+                    detect goals in casual football games and generate professional highlight reels. The system uses
+                    fine-tuned vision models for precise event detection, player identification, and action tracking.
+                    Built on a full Google Cloud Platform architecture with Firebase integration for real-time
                     processing and seamless user experience.
                 </p>
-                
+
                 <div class="tech-stack">
                     <h4 class="tech-stack-title">Technology Stack</h4>
                     <div class="tech-tags">
@@ -287,7 +290,7 @@
                         <span class="tech-tag">Video Analytics</span>
                     </div>
                 </div>
-                
+
                 <div class="key-features">
                     <h4 class="tech-stack-title">Core Features</h4>
                     <div class="features-grid">
@@ -309,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-metrics">
                     <div class="metric">
                         <div class="metric-value">AI</div>
@@ -324,20 +327,20 @@
                         <div class="metric-label">Architecture</div>
                     </div>
                 </div>
-                
+
                 <div class="project-screenshots">
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/highlightshub-login.png" alt="HighlightsHub Platform Interface">
+                        <img src="/assets/img/portfolio/highlightshub-login.png" alt="HighlightsHub Platform Interface" loading="lazy">
                         <div class="screenshot-label">Platform Features</div>
                     </div>
                 </div>
             </article>
 
             <!-- Project 4: Furhat Robot -->
-            <article class="project-card">
+            <article class="project-card" data-project="4">
                 <div class="project-header">
                     <div class="project-title-group">
-                        <span class="project-tag">NLP • Social Robotics • HRI</span>
+                        <span class="project-tag">NLP &bull; Social Robotics &bull; HRI</span>
                         <h3 class="project-title">Furhat Robot - Arabic NLP System</h3>
                         <p class="project-subtitle">Social Robot for Cultural Engagement in NEOM</p>
                     </div>
@@ -346,16 +349,16 @@
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                 </div>
-                
+
                 <p class="project-description">
-                    Developed an advanced Natural Language Processing system for Furhat Robotics' social humanoid robot, 
-                    specifically adapted for Arabic language and Middle Eastern cultural contexts. The system was deployed 
-                    at the NEOM Exhibit Center in Saudi Arabia, where the robot conducted interactive surveys and engaged 
-                    with Saudi visitors in natural, culturally appropriate Arabic conversations. This project represents a 
-                    significant advancement in cross-cultural human-robot interaction, enabling seamless bilingual communication 
+                    Developed an advanced Natural Language Processing system for Furhat Robotics' social humanoid robot,
+                    specifically adapted for Arabic language and Middle Eastern cultural contexts. The system was deployed
+                    at the NEOM Exhibit Center in Saudi Arabia, where the robot conducted interactive surveys and engaged
+                    with Saudi visitors in natural, culturally appropriate Arabic conversations. This project represents a
+                    significant advancement in cross-cultural human-robot interaction, enabling seamless bilingual communication
                     and culturally-aware social engagement.
                 </p>
-                
+
                 <div class="tech-stack">
                     <h4 class="tech-stack-title">Technology Stack</h4>
                     <div class="tech-tags">
@@ -372,7 +375,7 @@
                         <span class="tech-tag">Social Robotics</span>
                     </div>
                 </div>
-                
+
                 <div class="key-features">
                     <h4 class="tech-stack-title">Key Achievements</h4>
                     <div class="features-grid">
@@ -394,7 +397,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-metrics">
                     <div class="metric">
                         <div class="metric-value">NEOM</div>
@@ -409,21 +412,21 @@
                         <div class="metric-label">Social Robotics</div>
                     </div>
                 </div>
-                
-                <div style="margin-bottom: var(--spacing-lg);">
+
+                <div class="project-context">
                     <h4 class="tech-stack-title">About NEOM & Furhat Robotics</h4>
-                    <p class="project-description" style="margin-bottom: 0;">
-                        <strong>NEOM</strong> is Saudi Arabia's $500 billion futuristic smart city project featuring AI-driven 
-                        infrastructure, robotics integration, and autonomous systems as part of Saudi Vision 2030. 
-                        <strong>Furhat Robotics</strong> is a Swedish startup creating social robots with human-like facial 
-                        expressions and natural conversation capabilities, used in research institutions and commercial 
+                    <p class="project-description">
+                        <strong>NEOM</strong> is Saudi Arabia's $500 billion futuristic smart city project featuring AI-driven
+                        infrastructure, robotics integration, and autonomous systems as part of Saudi Vision 2030.
+                        <strong>Furhat Robotics</strong> is a Swedish startup creating social robots with human-like facial
+                        expressions and natural conversation capabilities, used in research institutions and commercial
                         deployments worldwide for customer service, healthcare, education, and recruitment.
                     </p>
                 </div>
-                
+
                 <div class="project-screenshots">
                     <div class="screenshot-container">
-                        <img src="/assets/img/portfolio/furhat-robot.png" alt="Furhat Social Robot">
+                        <img src="/assets/img/portfolio/furhat-robot.png" alt="Furhat Social Robot" loading="lazy">
                         <div class="screenshot-label">Furhat Social Robot with Human-like Expressions</div>
                     </div>
                 </div>
@@ -432,23 +435,23 @@
         </div>
     </section>
 
-    <!-- Additional Information Section -->
+    <!-- Research Section -->
     <section class="portfolio-section" style="padding-top: 0;">
         <div class="section-header">
             <span class="section-tag">Academic Research</span>
             <h2 class="section-title">Research & Publications</h2>
             <p class="section-description">
-                Explore my academic contributions in Human-Robot Interaction, Affective Computing, 
+                Explore my academic contributions in Human-Robot Interaction, Affective Computing,
                 and Social AI through published research and open-source frameworks.
             </p>
         </div>
-        
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="/publications/" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-purple-light) 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 1.125rem; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);">
+
+        <div class="cta-container">
+            <a href="/publications/" class="cta-button">
                 View Publications
                 <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
-            <a href="/about/" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: rgba(139, 92, 246, 0.1); border: 1px solid var(--accent-purple); color: var(--accent-purple-light); text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 1.125rem; transition: all 0.3s ease; margin-left: 1rem;">
+            <a href="/about/" class="cta-button-secondary">
                 About Me
                 <ion-icon name="person-outline"></ion-icon>
             </a>
@@ -456,27 +459,26 @@
     </section>
 
     <!-- Footer -->
-    <footer style="text-align: center; padding: 3rem 1rem; border-top: 1px solid rgba(139, 92, 246, 0.2); margin-top: 4rem;">
-        <p style="color: var(--text-secondary); font-size: 0.95rem;">
-            © 2026 Dr. Youssef Mohamed. All rights reserved.
-        </p>
-        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">
-            Built with passion for AI and innovation.
-        </p>
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 Dr. Youssef Mohamed. All rights reserved.</p>
+        <p>Built with passion for AI and innovation.</p>
     </footer>
 
-    <!-- Smooth Scroll Script -->
+    <!-- Interactive Scripts -->
     <script>
-        // Animate elements on scroll
+        // Intersection Observer for scroll animations
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -80px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
+                    // Add staggered delay based on index
+                    entry.target.style.animationDelay = `${index * 0.15}s`;
                     entry.target.classList.add('animate-on-scroll');
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
@@ -485,7 +487,168 @@
         document.querySelectorAll('.project-card').forEach(card => {
             observer.observe(card);
         });
+
+        // Copy to clipboard functionality
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = element.querySelector('span').textContent;
+                element.querySelector('span').textContent = 'Copied!';
+                element.style.borderColor = 'var(--accent-emerald)';
+
+                setTimeout(() => {
+                    element.querySelector('span').textContent = originalText;
+                    element.style.borderColor = '';
+                }, 2000);
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrolled = window.pageYOffset;
+                    const hero = document.querySelector('.portfolio-hero');
+                    if (hero && scrolled < window.innerHeight) {
+                        hero.style.setProperty('--scroll', scrolled * 0.3 + 'px');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Add hover sound effect class (optional enhancement)
+        document.querySelectorAll('.project-link, .cta-button, .cta-button-secondary').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = button.style.transform || '';
+            });
+        });
+
+        // Metric counter animation
+        const animateValue = (element, start, end, duration) => {
+            const startTimestamp = performance.now();
+            const step = (currentTimestamp) => {
+                const elapsed = currentTimestamp - startTimestamp;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(start + (end - start) * easeOut);
+                element.textContent = current + (element.dataset.suffix || '');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        // Observe metrics for counter animation
+        const metricsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const value = entry.target.querySelector('.metric-value');
+                    const text = value.textContent;
+                    const match = text.match(/^(\d+)/);
+                    if (match) {
+                        const num = parseInt(match[1]);
+                        const suffix = text.replace(num, '');
+                        value.dataset.suffix = suffix;
+                        animateValue(value, 0, num, 1500);
+                    }
+                    metricsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.metric').forEach(metric => {
+            metricsObserver.observe(metric);
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' && e.altKey) {
+                const projects = document.getElementById('projects');
+                if (projects) {
+                    projects.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
     </script>
+
+    <style>
+        /* Additional inline styles for enhanced interactivity */
+        .tag-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-emerald);
+            border-radius: 50%;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .project-context {
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-context .project-description {
+            margin-bottom: 0;
+        }
+
+        /* Hero parallax support */
+        .portfolio-hero {
+            --scroll: 0px;
+        }
+
+        .hero-content {
+            transform: translateY(var(--scroll));
+        }
+
+        /* Enhanced focus indicators */
+        .contact-item:focus-visible,
+        .project-link:focus-visible,
+        .cta-button:focus-visible,
+        .cta-button-secondary:focus-visible {
+            outline: 2px solid var(--accent-secondary);
+            outline-offset: 4px;
+        }
+
+        /* Loading state for images */
+        .screenshot-container img {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .screenshot-container img[src] {
+            opacity: 1;
+        }
+    </style>
 
 </body>
 </html>
