@@ -22,8 +22,10 @@ title: Youssef Mohamed                         # the main title
 tagline: Social AI Researcher & Entrepreneur   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  AI Project Portfolio showcasing innovative solutions in Computer Vision, Machine Learning, and Conversational AI. 
-  Featuring Vizioneer (camera analytics), Pokamind (adaptive learning), and HighlightsHub (sports analytics).
+  AI portfolio of Dr. Youssef Mohamed — founder of Pokamind (opt-in communication-skills training),
+  Vizioneer (camera analytics for dark stores), and HighlightsHub (sports). Creator of ROS4HRI
+  open-source framework, peer-reviewed researcher, and consultant to clients across the EU, MENA,
+  and the Gulf (most engagements under NDA).
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://ymohamed08.github.io'
