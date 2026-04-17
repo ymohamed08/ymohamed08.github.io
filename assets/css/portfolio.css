@@ -135,8 +135,10 @@ body.portfolio-page::after {
   gap: clamp(2rem, 5vw, 5rem);
   align-items: start;
 }
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .specimen { max-width: 520px; }
+  .specimen-caption { margin-left: 0; }
 }
 
 /* Left: typographic manifesto */
@@ -164,11 +166,18 @@ body.portfolio-page::after {
   font-family: var(--font-display);
   font-variation-settings: 'opsz' 144, 'SOFT' 80, 'WONK' 1;
   font-weight: 380;
-  font-size: clamp(3rem, 8.2vw, 7rem);
-  line-height: 0.92;
+  font-size: clamp(2.6rem, 7vw, 6.5rem);
+  line-height: 0.95;
   letter-spacing: -0.035em;
   color: var(--ink);
   margin-bottom: 1.75rem;
+  /* Allow word-containers to sit together; the browser only breaks between .word siblings */
+  word-spacing: 0;
+  white-space: normal;
+}
+.hero-title .word {
+  display: inline-block;
+  white-space: nowrap;
 }
 .hero-title .amp {
   font-family: var(--font-italic);

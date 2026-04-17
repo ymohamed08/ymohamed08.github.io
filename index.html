@@ -60,7 +60,7 @@
                 </p>
 
                 <p class="hero-lede">
-                    <span class="dropcap">D</span>r. Youssef Fahmy Mohamed spent his PhD teaching robots
+                    <span class="dropcap">Dr</span>. Youssef Fahmy Mohamed spent his PhD teaching robots
                     to <i>respond better to the person in front of them</i> &mdash; using thermal imaging
                     and social-context fusion in consented lab studies on effort and frustration signals.
                     Along the way he built <strong>ROS4HRI</strong>, an open-source framework now running
@@ -1164,33 +1164,41 @@
             }
         });
 
-        /* ═════════ Letter-by-letter hero title reveal ═════════ */
+        /* ═════════ Letter-by-letter hero title reveal (word-aware, no mid-word breaks) ═════════ */
         const title = document.getElementById('hero-title');
         if (title) {
-            const html = title.innerHTML;
-            // split TEXT nodes only, preserving inline tags
             const wrap = document.createElement('div');
-            wrap.innerHTML = html;
+            wrap.innerHTML = title.innerHTML;
             let i = 0;
             const walk = (node) => {
                 const children = Array.from(node.childNodes);
                 children.forEach(child => {
                     if (child.nodeType === Node.TEXT_NODE) {
                         const frag = document.createDocumentFragment();
-                        for (const ch of child.textContent) {
-                            if (ch === ' ') {
+                        // Split into alternating word + whitespace tokens so we can wrap each word
+                        const tokens = child.textContent.split(/(\s+)/);
+                        tokens.forEach(tok => {
+                            if (tok.length === 0) return;
+                            if (/^\s+$/.test(tok)) {
+                                // Preserve visual space between words
                                 const s = document.createElement('span');
                                 s.className = 'sp';
                                 frag.appendChild(s);
                             } else {
-                                const s = document.createElement('span');
-                                s.className = 'ltr';
-                                s.textContent = ch;
-                                s.style.animationDelay = (i * 28) + 'ms';
-                                i++;
-                                frag.appendChild(s);
+                                // Wrap the word so letters inside can't break across lines
+                                const word = document.createElement('span');
+                                word.className = 'word';
+                                for (const ch of tok) {
+                                    const s = document.createElement('span');
+                                    s.className = 'ltr';
+                                    s.textContent = ch;
+                                    s.style.animationDelay = (i * 28) + 'ms';
+                                    i++;
+                                    word.appendChild(s);
+                                }
+                                frag.appendChild(word);
                             }
-                        }
+                        });
                         child.parentNode.replaceChild(frag, child);
                     } else if (child.nodeType === Node.ELEMENT_NODE) {
                         walk(child);
