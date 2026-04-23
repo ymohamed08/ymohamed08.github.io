@@ -2037,3 +2037,350 @@ body.mirror-open .telemetry-hud { display: none; }
   .specimen-frame .scanline,
   .specimen-frame .thermal-overlay { display: none; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MOTION & POLISH LAYER  (v4)
+   Spring easings, richer hover states, stagger choreography, bolder numerals.
+   Additive — nothing above was removed, only elevated.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.35, 0.5, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-micro: 160ms;
+  --dur-base: 320ms;
+  --dur-slow: 620ms;
+}
+
+/* ─── Spring-timed transitions for interactive elements ─── */
+.hero-contact .contact-item,
+.project-link,
+.cta-button,
+.cta-button-secondary,
+.screenshot-container,
+.quest-item,
+.pub,
+.ma-btn,
+.mirror-close,
+.sound-toggle,
+.qh-btn {
+  transition:
+    transform var(--dur-base) var(--ease-spring),
+    background-color var(--dur-micro) var(--ease-smooth),
+    color var(--dur-micro) var(--ease-smooth),
+    border-color var(--dur-micro) var(--ease-smooth),
+    box-shadow var(--dur-base) var(--ease-spring),
+    filter var(--dur-base) var(--ease-smooth);
+}
+.screenshot-container img {
+  transition:
+    transform var(--dur-slow) var(--ease-spring),
+    filter var(--dur-slow) var(--ease-smooth);
+}
+
+/* ─── Arrow glide on buttons (adds direction cue on hover) ─── */
+.project-link ion-icon,
+.cta-button ion-icon,
+.cta-button-secondary ion-icon {
+  transition: transform var(--dur-base) var(--ease-spring);
+  will-change: transform;
+}
+.project-link:hover ion-icon[name*="arrow-forward"],
+.cta-button:hover ion-icon[name*="arrow-forward"],
+.cta-button-secondary:hover ion-icon[name*="arrow-forward"] {
+  transform: translateX(4px);
+}
+.project-link:hover ion-icon[name*="open"],
+.cta-button-secondary:hover ion-icon[name*="open"] {
+  transform: translate(2px, -2px);
+}
+.project-link:hover ion-icon[name*="logo-github"] {
+  transform: rotate(-6deg) scale(1.08);
+}
+.ma-btn ion-icon {
+  transition: transform var(--dur-base) var(--ease-spring);
+}
+.ma-btn:hover:not(:disabled) ion-icon {
+  transform: scale(1.12) rotate(-4deg);
+}
+
+/* ─── Tech tag: underline-sweep fill instead of plain color swap ─── */
+.tech-tag {
+  position: relative;
+  background-image: linear-gradient(var(--ink), var(--ink));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 100%;
+  transition:
+    color var(--dur-base) var(--ease-spring),
+    background-size var(--dur-base) var(--ease-spring),
+    border-color var(--dur-micro) var(--ease-smooth);
+}
+.tech-tag:hover {
+  background-size: 100% 100%;
+}
+
+/* ─── Publications: accent bar + nudge on hover ─── */
+.pub {
+  position: relative;
+}
+.pub::before {
+  content: '';
+  position: absolute;
+  left: -0.25rem;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 3px;
+  background: var(--thermal);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform var(--dur-base) var(--ease-spring);
+  pointer-events: none;
+}
+.pub:hover {
+  transform: translateX(6px);
+}
+.pub:hover::before {
+  transform: scaleY(1);
+}
+.pub:hover .p-cite {
+  color: var(--specimen-red);
+}
+
+/* ─── Quest items: refined lateral lift ─── */
+.quest-item {
+  transform-origin: left center;
+}
+.quest-item:hover {
+  transform: translateX(6px) translateY(-1px);
+}
+
+/* ─── Screenshot: keep existing lift but with spring timing and brighter reveal ─── */
+.screenshot-container:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--ink), 10px 10px 0 -1px var(--thermal);
+}
+
+/* ─── Specimen index number: larger, more assertive on desktop ─── */
+@media (min-width: 721px) {
+  .specimen-index .s-num {
+    font-size: clamp(4rem, 7vw, 6.2rem);
+    font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+    line-height: 0.82;
+  }
+  .specimen-index .s-num::after {
+    width: 42px;
+    height: 3px;
+    margin-top: 0.75rem;
+  }
+}
+
+/* ─── Metric values: heavier, brighter, punched-in confidence ─── */
+.metric-value {
+  font-variation-settings: 'opsz' 144, 'SOFT' 60, 'WONK' 1;
+  font-weight: 460;
+  font-size: clamp(2.2rem, 3.2vw, 3rem);
+}
+.stat-row .stat .n {
+  font-variation-settings: 'opsz' 144, 'SOFT' 80, 'WONK' 1;
+  font-weight: 460;
+  font-size: clamp(2.2rem, 3.6vw, 3.4rem);
+  line-height: 0.95;
+}
+.stat-row .stat {
+  padding: 1.4rem 0.6rem 1.2rem 0;
+  transition: background-color var(--dur-base) var(--ease-smooth);
+}
+.stat-row .stat:hover { background: var(--paper-warm); }
+.stat-row .stat:hover .n { color: var(--thermal); }
+.stat-row .stat .n { transition: color var(--dur-base) var(--ease-spring); }
+
+/* ─── Section number: tuck the label into a soft chip for more bite ─── */
+.section-number {
+  position: relative;
+}
+.section-number b {
+  position: relative;
+  padding: 0.2rem 0.5rem;
+  background: var(--paper-warm);
+  border-left: 2px solid var(--specimen-red);
+  transition: background var(--dur-base) var(--ease-spring),
+              color var(--dur-base) var(--ease-spring),
+              border-left-color var(--dur-base) var(--ease-spring);
+}
+.section-number:hover b {
+  background: var(--ink);
+  color: var(--paper);
+  border-left-color: var(--thermal);
+}
+
+/* ─── Catalog bar middle (city trail): slow shimmer on 'here' ─── */
+.catalog-bar .middle b {
+  transition: color var(--dur-base) var(--ease-spring);
+}
+.catalog-bar .middle:hover b:not(.here) {
+  color: var(--ink-mute);
+}
+
+/* ─── Section titles: wink the italicised 'em' up slightly ─── */
+.section-title em,
+.ma-title em {
+  display: inline-block;
+  transition: transform var(--dur-slow) var(--ease-spring);
+}
+.section-title:hover em {
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+/* ─── Specimen entry: stagger children as the card reveals ─── */
+.specimen-entry .specimen-body > * {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 540ms var(--ease-spring),
+    transform 540ms var(--ease-spring);
+}
+.specimen-entry.animate-on-scroll .specimen-body > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(1) { transition-delay: 80ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(2) { transition-delay: 160ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(3) { transition-delay: 240ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(4) { transition-delay: 320ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(5) { transition-delay: 400ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(6) { transition-delay: 480ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(7) { transition-delay: 560ms; }
+.specimen-entry.animate-on-scroll .specimen-body > *:nth-child(8) { transition-delay: 640ms; }
+
+/* ─── Specimen frame: 3D-ready container for the subtle JS parallax tilt ─── */
+.specimen { perspective: 1200px; }
+.specimen-frame {
+  transform-style: preserve-3d;
+  transition: transform var(--dur-slow) var(--ease-spring);
+  will-change: transform;
+}
+.specimen-frame:hover {
+  box-shadow:
+    10px 10px 0 var(--ink),
+    10px 10px 0 1px var(--ink),
+    -1px -1px 0 var(--thermal);
+}
+
+/* ─── Hero title per-letter hover: playful wonk on individual letters ─── */
+.hero-title .ltr {
+  transition:
+    color var(--dur-base) var(--ease-spring),
+    font-variation-settings var(--dur-base) var(--ease-spring),
+    transform var(--dur-base) var(--ease-spring);
+  cursor: default;
+}
+.hero-title .ltr:hover {
+  color: var(--thermal);
+  font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+  transform: translateY(-4px) rotate(-2deg);
+}
+
+/* ─── Scroll indicator: warm on hover ─── */
+.scroll-indicator {
+  transition: color var(--dur-micro) var(--ease-smooth), transform var(--dur-base) var(--ease-spring);
+}
+.scroll-indicator:hover {
+  color: var(--thermal);
+  transform: translateX(3px);
+}
+
+/* ─── Footnotes: soft left-to-right stagger on load ─── */
+.footnotes li {
+  opacity: 0;
+  animation: fn-in 540ms var(--ease-spring) both;
+}
+.footnotes li:nth-child(1) { animation-delay: 1.8s; }
+.footnotes li:nth-child(2) { animation-delay: 1.88s; }
+.footnotes li:nth-child(3) { animation-delay: 1.96s; }
+.footnotes li:nth-child(4) { animation-delay: 2.04s; }
+.footnotes li:nth-child(5) { animation-delay: 2.12s; }
+.footnotes li:nth-child(6) { animation-delay: 2.20s; }
+@keyframes fn-in {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ─── Contact chips: sequential entrance after footnotes settle ─── */
+.hero-contact .contact-item {
+  opacity: 0;
+  animation: chip-in 520ms var(--ease-spring) both;
+}
+.hero-contact .contact-item:nth-child(1) { animation-delay: 2.40s; }
+.hero-contact .contact-item:nth-child(2) { animation-delay: 2.54s; }
+.hero-contact .contact-item:nth-child(3) { animation-delay: 2.68s; }
+@keyframes chip-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+/* ─── Accessible focus states ─── */
+:where(a, button, [tabindex], .contact-item, .sound-toggle):focus-visible {
+  outline: 2px solid var(--thermal);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* ─── Catalog bar 'here' indicator breathes subtly ─── */
+.catalog-bar .here {
+  animation: here-breathe 2.6s ease-in-out infinite;
+}
+@keyframes here-breathe {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.72; }
+}
+
+/* ─── Journey traveler glow (subtle thermal halo) ─── */
+.journey .j-traveler circle:first-child {
+  animation: traveler-halo 2.2s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes traveler-halo {
+  0%, 100% { opacity: 0.2; r: 5; }
+  50%      { opacity: 0.45; r: 7; }
+}
+
+/* ─── Marginalia rows: gently light up on hover ─── */
+.marginalia .row {
+  transition: color var(--dur-micro) var(--ease-smooth), padding-left var(--dur-base) var(--ease-spring);
+}
+.marginalia .row:hover {
+  color: var(--ink);
+  padding-left: 0.35rem;
+}
+.marginalia .row:hover b {
+  color: var(--thermal);
+}
+
+/* ─── Specimen entry top border gets a thermal kiss on hover ─── */
+.specimen-entry {
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    border-top-color var(--dur-base) var(--ease-smooth);
+}
+.specimen-entry:hover {
+  border-top-color: var(--thermal);
+}
+
+/* ─── Reduced motion: disable the new motion layer too ─── */
+@media (prefers-reduced-motion: reduce) {
+  .specimen-entry .specimen-body > *,
+  .footnotes li,
+  .hero-contact .contact-item,
+  .catalog-bar .here,
+  .journey .j-traveler circle:first-child {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .specimen-frame { transform: none !important; }
+}

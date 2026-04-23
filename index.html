@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/assets/css/portfolio.css?v=3">
+    <link rel="stylesheet" href="/assets/css/portfolio.css?v=4">
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1325,6 +1325,42 @@
             setTimeout(doBlink, 4500 + Math.random() * 3500);
         };
         setTimeout(doBlink, 3500);
+
+        /* ═════════ Subtle parallax tilt on the specimen photo ═════════
+           A gentle 3D tilt that follows the cursor across the specimen area.
+           Capped at ±3.5° with inertial smoothing, so it feels like weight. */
+        (() => {
+            const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const specimen = document.querySelector('.specimen');
+            const frm = document.getElementById('specimen-frame');
+            if (reduce || !specimen || !frm) return;
+            const MAX = 3.5;
+            let rafId = 0, tx = 0, ty = 0, cx = 0, cy = 0, active = false;
+            const tick = () => {
+                cx += (tx - cx) * 0.085;
+                cy += (ty - cy) * 0.085;
+                frm.style.transform = `rotateY(${cx.toFixed(2)}deg) rotateX(${cy.toFixed(2)}deg)`;
+                if (Math.abs(tx - cx) > 0.04 || Math.abs(ty - cy) > 0.04 || active) {
+                    rafId = requestAnimationFrame(tick);
+                } else {
+                    frm.style.transform = '';
+                    rafId = 0;
+                }
+            };
+            specimen.addEventListener('mousemove', (e) => {
+                const r = specimen.getBoundingClientRect();
+                const nx = (e.clientX - r.left) / r.width;
+                const ny = (e.clientY - r.top) / r.height;
+                tx = (nx - 0.5) * 2 * MAX;
+                ty = -(ny - 0.5) * 2 * MAX;
+                active = true;
+                if (!rafId) rafId = requestAnimationFrame(tick);
+            }, { passive: true });
+            specimen.addEventListener('mouseleave', () => {
+                tx = 0; ty = 0; active = false;
+                if (!rafId) rafId = requestAnimationFrame(tick);
+            });
+        })();
 
         /* ═════════ Metric counters (existing .metric + new .stat-row) ═════════ */
         const animate = (el, end, suffix) => {
