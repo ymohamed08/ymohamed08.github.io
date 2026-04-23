@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Field Notes on Dr. Youssef Mohamed — Social AI researcher, PhD (KTH Stockholm), founder of Vizioneer, Pokamind, and HighlightsHub.">
+    <meta name="keywords" content="AI, Machine Learning, Computer Vision, NLP, Social AI, Affective Computing, Youssef Mohamed, Human-Robot Interaction">
+    <meta name="author" content="Dr. Youssef Mohamed">
+    <meta name="theme-color" content="#efe7d7">
+
+    <title>Field Notes — Dr. Youssef Mohamed</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/css/portfolio.css?v=4">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="portfolio-page">
+
+    <!-- ───────────── CATALOG TOP BAR ───────────── -->
+    <header class="catalog-bar">
+        <span class="left">
+            <span class="live-dot"></span>
+            Field Notes <b>/ №07 &mdash; Y.F.M.</b>
+        </span>
+        <span class="middle">
+            tracking: <b>CAI</b> → <b>GLR</b> → <b>BRS</b> → <b>ARN</b> → <b class="here">BCN</b> <em style="font-family:var(--font-italic); font-style:italic; text-transform:none; letter-spacing:0">(you are here)</em>
+        </span>
+        <span class="right">
+            <span id="clock">--:--:--</span> <b>BCN</b> &nbsp; · &nbsp; 41.38 °N
+            <button id="sound-toggle" class="sound-toggle" type="button" aria-label="toggle sound">
+                <ion-icon name="volume-mute-outline" id="sound-icon"></ion-icon>
+                <span id="sound-label">sound&nbsp;off</span>
+            </button>
+        </span>
+    </header>
+
+    <!-- ───────────── HERO : THE SUBJECT ───────────── -->
+    <section class="hero">
+        <div class="hero-grid">
+
+            <!-- LEFT: typographic intro -->
+            <div class="hero-left">
+                <div class="hero-eyebrow">Portfolio · 2026 · Vol. i</div>
+
+                <h1 class="hero-title" id="hero-title" data-reveal>
+                    Youssef,<br>
+                    <em>being</em> <span class="wonk">observed.</span><br>
+                    <span class="amp">&</span> observing <em>back.</em>
+                </h1>
+
+                <p class="hero-arabic">
+                    <span class="typed" id="typed-ar">يوسف فهمي محمد · باحث في الذكاء الاصطناعي الاجتماعي</span>
+                </p>
+
+                <p class="hero-lede">
+                    <span class="dropcap">Dr</span>. Youssef Fahmy Mohamed spent his PhD teaching robots
+                    to <i>respond better to the person in front of them</i> &mdash; using thermal imaging
+                    and social-context fusion in consented lab studies on effort and frustration signals.
+                    Along the way he built <strong>ROS4HRI</strong>, an open-source framework now running
+                    inside every PAL Robotics commercial robot; founded <strong>Pokamind</strong>, which
+                    turned that research into an opt-in communication-skills training product
+                    (<i>€43K in Vinnova/Almi grants and €150K in enterprise clients</i>); and keeps a
+                    quiet habit of <i>publishing papers people actually cite</i> &mdash; six of them, 92
+                    citations and counting.
+                </p>
+
+                <ul class="footnotes">
+                    <li><span class="f-mark">§1</span> PhD, Social AI &middot; KTH Royal Institute of Technology, Stockholm (WASP-funded) &middot; 2021 – 2025.</li>
+                    <li><span class="f-mark">§2</span> MSc Robotics, University of Bristol &middot; BSc Mechanical Engineering, University of Surrey (Fiat-sponsored thesis).</li>
+                    <li><span class="f-mark">§3</span> Founder &amp; CEO: Pokamind AB &middot; Founder: Vizioneer, HighlightsHub &middot; Creator: ROS4HRI &middot; Consultant: <i>many clients, most under NDA &mdash; the bulk of the week-to-week work</i>.</li>
+                    <li><span class="f-mark">§4</span> Publications in HRI, RO-MAN, IROS, IJSR &middot; 92 citations &middot; h-index 5.</li>
+                    <li><span class="f-mark">§5</span> Native Arabic. Bilingual English. Swedish at B1. Fluent in PyTorch.</li>
+                    <li><span class="f-mark">§6</span> Currently: Barcelona, via Stockholm, via Bristol, via Guildford, via Cairo.</li>
+                </ul>
+
+                <div class="hero-contact">
+                    <div class="contact-item" onclick="copyToClipboard('youssefezzat12@gmail.com', this)">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>youssefezzat12@gmail.com</span>
+                    </div>
+                    <div class="contact-item" onclick="copyToClipboard('+46 790489221', this)">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <span>+46 790 489 221</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/youssefmohamed-phd/" target="_blank" rel="noopener" class="contact-item">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <span>linkedin / youssefmohamed-phd</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT: the specimen (his photo, annotated) -->
+            <aside class="specimen">
+                <figure class="specimen-frame" id="specimen-frame">
+                    <img src="/assets/img/portfolio/subject.jpg"
+                         alt="Dr. Youssef Mohamed" id="subject-photo">
+
+                    <div class="thermal-overlay"></div>
+                    <div class="scanline"></div>
+
+                    <!-- crop marks -->
+                    <span class="crop tl"></span>
+                    <span class="crop tr"></span>
+                    <span class="crop bl"></span>
+                    <span class="crop br"></span>
+
+                    <!-- Landmark overlay — actual coordinates extracted by running MediaPipe
+                         FaceLandmarker on this exact photo. All values are in image % (0-100). -->
+                    <svg class="specimen-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"
+                         aria-hidden="true">
+                        <!-- Face bbox (from MediaPipe face-oval extents) -->
+                        <rect class="lm-box" x="34.8" y="30.9" width="32.8" height="43"/>
+
+                        <!-- Face oval (36 vertices from MediaPipe FACE_OVAL) -->
+                        <polyline class="lm-line lm-oval"
+                            points="53.4,31.1 58.1,31.5 61.8,32.3 64.9,33.8 66.6,35.9 67.3,38.4 67.6,41.2 67.5,44.7 67.2,48.1 66.9,51.7 66.3,55.5 65.1,59.5 63.5,63.0 61.7,65.7 59.6,68.3 57.9,70.4 56.1,72.3 53.8,73.5 50.9,73.9 47.8,73.4 45.4,72.1 43.5,70.2 41.6,68.1 39.4,65.3 37.6,62.3 36.1,58.5 35.2,54.2 34.8,50.2 34.8,46.5 34.9,43.0 35.4,39.5 36.2,36.8 37.8,34.3 40.3,32.3 44.3,31.2 48.5,30.9 53.4,31.1"/>
+
+                        <!-- Left eyebrow (from subject's RIGHT, viewer's LEFT) -->
+                        <polyline class="lm-line" points="38.2,40.3 39.9,39.2 42.5,38.6 45.8,38.9 49.5,39.6"
+                            style="animation-delay:0.75s"/>
+                        <!-- Right eyebrow -->
+                        <polyline class="lm-line" points="56.6,40.0 60.1,39.7 63.0,39.7 65.1,40.5 66.2,41.7"
+                            style="animation-delay:0.9s"/>
+
+                        <!-- Left eye outline -->
+                        <polyline class="lm-line" points="41.3,44.1 42.9,43.3 45.4,43.3 48.1,44.9 46.0,44.8 43.5,44.8 41.3,44.1"
+                            style="animation-delay:1.05s"/>
+                        <!-- Right eye outline -->
+                        <polyline class="lm-line" points="63.3,45.2 62.0,44.2 59.7,44.0 56.9,45.4 58.9,45.4 61.3,45.6 63.3,45.2"
+                            style="animation-delay:1.2s"/>
+
+                        <!-- Nose bridge (top → tip) -->
+                        <polyline class="lm-line" points="52.8,44.2 52.4,57.4"
+                            style="animation-delay:1.35s"/>
+                        <!-- Nose wings → tip -->
+                        <polyline class="lm-line" points="46.9,53.7 52.4,57.4 57.5,54.2"
+                            style="animation-delay:1.4s"/>
+
+                        <!-- Lips outer (MediaPipe LIPS_OUTER) -->
+                        <polyline class="lm-line" points="43.4,59.3 44.3,59.3 45.6,59.4 47.2,59.6 49.5,59.8 51.9,60.4 54.2,60.0 56.2,59.8 57.6,59.8 58.6,59.8 59.4,59.9 58.6,61.6 57.4,63.5 55.9,65.2 53.9,66.3 51.5,66.6 49.1,66.2 47.0,65.0 45.4,63.1 44.2,61.2 43.4,59.3"
+                            style="animation-delay:1.5s"/>
+
+                        <!-- Landmark dots at key points -->
+                        <g>
+                            <!-- Fun cursor-tracking eyes: thermal pupil with cream glint,
+                                 wrapped in a group so we can translate it via JS. -->
+                            <g class="eye-tracker" id="pupil-L">
+                                <circle fill="#1b140e" cx="44.2" cy="43.9" r="1.4" opacity="0.85"/>
+                                <circle fill="var(--thermal)" cx="44.2" cy="43.9" r="1.0"/>
+                                <circle fill="#fff6e0" cx="44.55" cy="43.55" r="0.32" opacity="0.95"/>
+                            </g>
+                            <g class="eye-tracker" id="pupil-R">
+                                <circle fill="#1b140e" cx="60.8" cy="44.7" r="1.4" opacity="0.85"/>
+                                <circle fill="var(--thermal)" cx="60.8" cy="44.7" r="1.0"/>
+                                <circle fill="#fff6e0" cx="61.15" cy="44.35" r="0.32" opacity="0.95"/>
+                            </g>
+
+                            <!-- Feature anchors -->
+                            <circle class="lm-dot" cx="52.4" cy="57.4" r="0.55" style="animation-delay:1.3s"/>
+                            <circle class="lm-dot" cx="43.4" cy="59.3" r="0.55" style="animation-delay:1.35s"/>
+                            <circle class="lm-dot" cx="59.4" cy="59.9" r="0.55" style="animation-delay:1.4s"/>
+                            <circle class="lm-dot" cx="50.9" cy="73.9" r="0.55" style="animation-delay:1.45s"/>
+                            <circle class="lm-dot" cx="34.8" cy="46.5" r="0.55" style="animation-delay:1.5s"/>
+                            <circle class="lm-dot" cx="67.2" cy="48.1" r="0.55" style="animation-delay:1.55s"/>
+                            <circle class="lm-dot" cx="37.6" cy="62.3" r="0.55" style="animation-delay:1.6s"/>
+                            <circle class="lm-dot" cx="63.5" cy="63.0" r="0.55" style="animation-delay:1.65s"/>
+                        </g>
+                    </svg>
+                </figure>
+
+                <figcaption class="specimen-caption">
+                    <div class="title-line">
+                        fig. 01 &mdash; <em>subject Y.F.M.</em>, observed during working hours.
+                    </div>
+                    <span class="k">Status</span><span class="v hot">awake · building · scheming</span>
+                    <span class="k">Mood</span><span class="v">amused, faintly caffeinated</span>
+                    <span class="k">Running</span><span class="v">thesis → products · v2026.04</span>
+                    <span class="k">Located</span><span class="v cool">Barcelona · 41°N (currently)</span>
+                    <span class="k">Reachable</span><span class="v">yes — see §3 above</span>
+                </figcaption>
+            </aside>
+        </div>
+
+        <a href="#section-abstract" class="scroll-indicator">to the abstract</a>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ───────────── SECTION 01 : ABSTRACT ───────────── -->
+    <section class="section" id="section-abstract">
+        <header class="section-header">
+            <div class="section-number">Section 01 &middot; <b>abstract</b></div>
+            <h2 class="section-title">A brief, <em>honest</em> account<br>of what Youssef actually does.</h2>
+            <p class="section-description">
+                A PhD in <i>how robots can respond to the person in front of them</i>. A Master's
+                in <i>how machines can sense the dynamics of a group</i>. Three companies in between.
+                The thread is the same thread it always was: how do we build AI that actually helps
+                the humans it interacts with?
+            </p>
+        </header>
+
+        <div class="abstract">
+            <div class="abstract-body">
+                <p>
+                    Youssef's doctoral thesis <i>&mdash; &ldquo;Adaptive systems for real-time
+                    affective state detection in human-robot interaction using thermal imaging,
+                    multimodal fusion, and contextual understanding&rdquo; &mdash;</i> was
+                    supported by the <strong>Wallenberg AI, Autonomous Systems and Software Program</strong>
+                    at KTH's Division of Robotics, Perception and Learning. Along the way he
+                    published the first automatic <i>frustration detection</i> paper using thermal
+                    imaging at ACM/IEEE HRI, then the first context-aware affective fusion paper at
+                    RO-MAN, <i>and</i> built the tooling underneath the rest of the field.
+                </p>
+                <p>
+                    That tooling was <strong>ROS4HRI</strong> &mdash; an open-source framework
+                    standardising how social robots handle faces, bodies, voices, and the slippery
+                    problem of knowing which person is which in a crowded room. PAL Robotics
+                    adopted it as the standard HRI toolkit for their <i>entire commercial fleet</i>
+                    &mdash; ARI, TIAGo, and the receptionist prototype Youssef helped architect as a
+                    Visiting Researcher in Barcelona.
+                </p>
+                <p>
+                    Today he channels the same obsession into companies. <strong>Pokamind AB</strong>
+                    is the PhD, productised &mdash; €43K in Vinnova/Almi grants, €150K in
+                    enterprise clients, and a cross-functional team of 8+ shipping a GCP-backed
+                    SaaS that gives each learner structured, opt-in practice on their own
+                    communication style &mdash; then returns a private, explainable report the
+                    learner owns and controls.
+                    <strong>Vizioneer</strong> turns existing cameras in dark stores and cloud
+                    kitchens into an operational command centre. <strong>HighlightsHub</strong>
+                    gives every Sunday-league football match its own highlight reel.
+                </p>
+                <p>
+                    Before any of that, a Master's at <i>Bristol</i> (building a system that could
+                    tell, from across a room, whether two people were actually enjoying each other's
+                    company) and a Fiat-sponsored BSc at <i>Surrey</i> (teaching a light commercial
+                    vehicle to steer itself, politely, around pedestrians). The research hasn't
+                    really changed since. <i>Only the table size.</i>
+                </p>
+            </div>
+
+            <aside class="marginalia">
+                <h4>Marginalia</h4>
+                <div class="row"><span>PhD</span><b>KTH · 2021–25</b></div>
+                <div class="row"><span>MSc</span><b>Bristol · '19–20</b></div>
+                <div class="row"><span>BSc</span><b>Surrey · '16–19</b></div>
+                <div class="row"><span>Field</span><b>Social AI</b></div>
+                <div class="row"><span>Methods</span><b>Thermal · VLM · LLM</b></div>
+                <div class="row"><span>Publications</span><b>6 · <em>92 cites</em></b></div>
+                <div class="row"><span>h-index</span><b>5</b></div>
+                <div class="row"><span>Companies</span><b>3</b></div>
+                <div class="row"><span>OSS</span><b>ROS4HRI</b></div>
+                <div class="row"><span>Languages</span><b>ar · en · sv</b></div>
+
+                <div class="journey" aria-label="cities Youssef has lived in">
+                    <h4>Trajectory</h4>
+                    <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                        <path id="j-traj" class="j-line" d="M 12 60 Q 50 30, 70 55 T 125 45 T 180 35 T 225 30" fill="none"/>
+
+                        <!-- City dots + labels -->
+                        <circle class="j-dot" cx="12" cy="60" r="2.5"/>
+                        <text class="j-label" x="12" y="74" text-anchor="middle">Cairo</text>
+
+                        <circle class="j-dot" cx="70" cy="55" r="2.5"/>
+                        <text class="j-label" x="70" y="68" text-anchor="middle">Guildf.</text>
+                        <text class="j-year"  x="70" y="75" text-anchor="middle">'16</text>
+
+                        <circle class="j-dot" cx="125" cy="45" r="2.5"/>
+                        <text class="j-label" x="125" y="38" text-anchor="middle">Bristol</text>
+                        <text class="j-year"  x="125" y="31" text-anchor="middle">'19</text>
+
+                        <circle class="j-dot" cx="180" cy="35" r="2.5"/>
+                        <text class="j-label" x="180" y="28" text-anchor="middle">STHLM</text>
+                        <text class="j-year"  x="180" y="21" text-anchor="middle">'21</text>
+
+                        <circle class="j-dot current" cx="225" cy="30" r="3"/>
+                        <text class="j-label current" x="225" y="46" text-anchor="middle">BCN</text>
+                        <text class="j-year"  x="225" y="53" text-anchor="middle">'23 →</text>
+
+                        <!-- Traveler: moves along the path continuously -->
+                        <g class="j-traveler">
+                            <circle r="5" fill="var(--thermal)" opacity="0.2"/>
+                            <circle r="2" fill="var(--thermal)"/>
+                            <animateMotion dur="7s" repeatCount="indefinite"
+                                keyTimes="0;0.7;1" keyPoints="0;1;1" calcMode="linear">
+                                <mpath href="#j-traj"/>
+                            </animateMotion>
+                        </g>
+                    </svg>
+                </div>
+            </aside>
+        </div>
+
+        <div class="stat-row" id="stat-row">
+            <div class="stat"><div class="n" data-count="92">0</div><div class="l">citations</div></div>
+            <div class="stat"><div class="n" data-count="6">0</div><div class="l">papers</div></div>
+            <div class="stat"><div class="n">€<span data-count="193">0</span>K</div><div class="l">grants + pilots</div></div>
+            <div class="stat"><div class="n" data-count="5">0</div><div class="l">cities lived</div></div>
+            <div class="stat"><div class="n"><em>∞</em></div><div class="l">lines of python</div></div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ───────────── SECTION 02 : SPECIMENS / PROJECTS ───────────── -->
+    <section class="section" id="projects">
+        <header class="section-header">
+            <div class="section-number">Section 02 &middot; <b>specimens</b></div>
+            <h2 class="section-title">Five <em>public builds</em>.<br><em>Plenty more</em> behind NDAs.</h2>
+            <p class="section-description">
+                Each public entry is a working system &mdash; not a slide, not a mockup. Shipped,
+                deployed, used by humans and robots. <i>Where possible, click through and try them.</i>
+                The consultancy work, which is most of what he actually ships week-to-week, lives
+                behind signed NDAs &mdash; summarised in the final card.
+            </p>
+        </header>
+
+        <div class="specimens">
+
+            <!-- SPECIMEN 01 : VIZIONEER -->
+            <article class="specimen-entry" data-project="1">
+                <div class="specimen-index">
+                    <span class="s-label">Specimen</span>
+                    <span class="s-num">01</span>
+                </div>
+                <div class="specimen-body">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-tag">computer vision · GCP</span>
+                            <h3 class="project-title">Vizioneer</h3>
+                            <p class="project-subtitle"><em>AI-powered camera analytics for dark stores &amp; cloud kitchens.</em></p>
+                        </div>
+                        <a href="https://www.vizioneer.net" target="_blank" rel="noopener" class="project-link">
+                            visit site <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <p class="project-description">
+                        Vizioneer turns existing camera infrastructure into a real-time operational
+                        command centre for rapid commerce. Vision Language Models and classical machine
+                        vision work in concert to <strong>track orders, optimise picking routes, and
+                        detect bottlenecks</strong> &mdash; from cameras already mounted on the ceiling.
+                        No new hardware. Setup measured in minutes. <i>Cameras are used for order and
+                        route tracking; the system does not identify, profile, or score staff.</i>
+                    </p>
+
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">technology stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vision Language Models</span>
+                            <span class="tech-tag">Machine Vision</span>
+                            <span class="tech-tag">RTSP streaming</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Real-time processing</span>
+                            <span class="tech-tag">Google Cloud Platform</span>
+                            <span class="tech-tag">Object detection</span>
+                            <span class="tech-tag">Tracking</span>
+                        </div>
+                    </div>
+
+                    <div class="key-features">
+                        <h4 class="tech-stack-title">key features</h4>
+                        <div class="features-grid">
+                            <div class="feature-item"><ion-icon name="flash-outline" class="feature-icon"></ion-icon><span>Smart picking routes</span></div>
+                            <div class="feature-item"><ion-icon name="eye-outline" class="feature-icon"></ion-icon><span>Real-time inventory</span></div>
+                            <div class="feature-item"><ion-icon name="checkbox-outline" class="feature-icon"></ion-icon><span>Order verification</span></div>
+                            <div class="feature-item"><ion-icon name="analytics-outline" class="feature-icon"></ion-icon><span>Bottleneck detection</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric"><div class="metric-value">40%</div><div class="metric-label">faster picks</div></div>
+                        <div class="metric"><div class="metric-value">99.5%</div><div class="metric-label">accuracy</div></div>
+                        <div class="metric"><div class="metric-value">2min</div><div class="metric-label">setup</div></div>
+                    </div>
+
+                    <div class="project-screenshots">
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/vizioneer-hero.png" alt="Vizioneer dashboard" loading="lazy">
+                            <div class="screenshot-label">analytics dashboard</div>
+                        </div>
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/vizioneer-solutions.png" alt="Vizioneer dark store solutions" loading="lazy">
+                            <div class="screenshot-label">dark store optimisation</div>
+                        </div>
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/vizioneer-platform.png" alt="Vizioneer platform" loading="lazy">
+                            <div class="screenshot-label">platform architecture</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPECIMEN 02 : POKAMIND -->
+            <article class="specimen-entry" data-project="2">
+                <div class="specimen-index">
+                    <span class="s-label">Specimen</span>
+                    <span class="s-num">02</span>
+                </div>
+                <div class="specimen-body">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-tag">LLMs · communication coaching · GCP</span>
+                            <h3 class="project-title">Pokamind</h3>
+                            <p class="project-subtitle"><em>Adaptive, opt-in practice for leadership &amp; communication skills.</em></p>
+                        </div>
+                        <a href="https://www.pokamind.com" target="_blank" rel="noopener" class="project-link">
+                            visit site <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <p class="project-description">
+                        Pokamind is a skills-training platform where learners opt in to
+                        role-play sessions with an AI counterpart. During each session the
+                        system analyses the learner's own <strong>communication style
+                        &mdash; word choices, pacing, clarity, and turn-taking</strong> &mdash;
+                        then returns a structured, explainable summary at the end. Analysis
+                        runs per-session; no continuous monitoring, no profiles of third
+                        parties, no biometric categorisation. Reports belong to the learner
+                        and can be deleted on request. Built <strong>GDPR- and EU&nbsp;AI-Act-aware
+                        by design</strong>, with SHAP/LIME explainability on top of enterprise-grade
+                        GCP + Kubernetes (99.9% uptime).
+                    </p>
+
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">technology stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Large Language Models</span>
+                            <span class="tech-tag">Explainable AI (SHAP / LIME)</span>
+                            <span class="tech-tag">RAG architecture</span>
+                            <span class="tech-tag">LoRA fine-tuning</span>
+                            <span class="tech-tag">Self-review of delivery cues (opt-in)</span>
+                            <span class="tech-tag">Voice pacing / clarity</span>
+                            <span class="tech-tag">NLP &amp; keyword extraction</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">OAuth 2.0</span>
+                            <span class="tech-tag">GDPR-aware design</span>
+                        </div>
+                    </div>
+
+                    <div class="key-features">
+                        <h4 class="tech-stack-title">AI components</h4>
+                        <div class="features-grid">
+                            <div class="feature-item"><ion-icon name="chatbubbles-outline" class="feature-icon"></ion-icon><span>Conversational engine</span></div>
+                            <div class="feature-item"><ion-icon name="bulb-outline" class="feature-icon"></ion-icon><span>Explainable feedback</span></div>
+                            <div class="feature-item"><ion-icon name="person-outline" class="feature-icon"></ion-icon><span>Adaptive personalisation</span></div>
+                            <div class="feature-item"><ion-icon name="stats-chart-outline" class="feature-icon"></ion-icon><span>Communication analysis</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric"><div class="metric-value">4x</div><div class="metric-label">ROI</div></div>
+                        <div class="metric"><div class="metric-value">68%</div><div class="metric-label">faster dev</div></div>
+                        <div class="metric"><div class="metric-value">92%</div><div class="metric-label">satisfaction</div></div>
+                        <div class="metric"><div class="metric-value">99.9%</div><div class="metric-label">uptime</div></div>
+                    </div>
+
+                    <div class="project-screenshots">
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/pokamind-hero.png" alt="Pokamind platform" loading="lazy">
+                            <div class="screenshot-label">AI-native learning platform</div>
+                        </div>
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/pokamind-features.png" alt="Pokamind features" loading="lazy">
+                            <div class="screenshot-label">enterprise security &amp; scale</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPECIMEN 03 : HIGHLIGHTSHUB -->
+            <article class="specimen-entry" data-project="3">
+                <div class="specimen-index">
+                    <span class="s-label">Specimen</span>
+                    <span class="s-num">03</span>
+                </div>
+                <div class="specimen-body">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-tag">computer vision · sports analytics</span>
+                            <h3 class="project-title">HighlightsHub</h3>
+                            <p class="project-subtitle"><em>A TV crew for every Sunday league.</em></p>
+                        </div>
+                        <a href="https://highlightshub-9dbac.web.app/" target="_blank" rel="noopener" class="project-link">
+                            visit site <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <p class="project-description">
+                        HighlightsHub watches amateur football matches and decides, on its own,
+                        when something interesting happened &mdash; then stitches together a
+                        highlight reel. The system handles <strong>goal detection, player
+                        tracking, and action recognition</strong> through fine-tuned computer
+                        vision. Built because the best goal of the weekend shouldn't vanish
+                        with the final whistle.
+                    </p>
+
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">technology stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Fine-tuned vision models</span>
+                            <span class="tech-tag">Object tracking</span>
+                            <span class="tech-tag">Action recognition</span>
+                            <span class="tech-tag">Event detection</span>
+                            <span class="tech-tag">Video analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="key-features">
+                        <h4 class="tech-stack-title">core features</h4>
+                        <div class="features-grid">
+                            <div class="feature-item"><ion-icon name="football-outline" class="feature-icon"></ion-icon><span>Automatic goal detection</span></div>
+                            <div class="feature-item"><ion-icon name="people-outline" class="feature-icon"></ion-icon><span>Player identification</span></div>
+                            <div class="feature-item"><ion-icon name="film-outline" class="feature-icon"></ion-icon><span>Highlight generation</span></div>
+                            <div class="feature-item"><ion-icon name="bar-chart-outline" class="feature-icon"></ion-icon><span>Match statistics</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric"><div class="metric-value">auto</div><div class="metric-label">detection</div></div>
+                        <div class="metric"><div class="metric-value">live</div><div class="metric-label">processing</div></div>
+                        <div class="metric"><div class="metric-value">cloud</div><div class="metric-label">architecture</div></div>
+                    </div>
+
+                    <div class="project-screenshots">
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/highlightshub-login.png" alt="HighlightsHub interface" loading="lazy">
+                            <div class="screenshot-label">platform interface</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPECIMEN 04 : FURHAT -->
+            <article class="specimen-entry" data-project="4">
+                <div class="specimen-index">
+                    <span class="s-label">Specimen</span>
+                    <span class="s-num">04</span>
+                </div>
+                <div class="specimen-body">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-tag">NLP · social robotics · HRI</span>
+                            <h3 class="project-title">Furhat &middot; Arabic NLP</h3>
+                            <p class="project-subtitle"><em>A social robot that speaks Saudi Arabic, deployed in NEOM.</em></p>
+                        </div>
+                        <a href="https://furhatrobotics.com" target="_blank" rel="noopener" class="project-link">
+                            Furhat Robotics <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <p class="project-description">
+                        A full Arabic NLP stack for Furhat Robotics' social humanoid &mdash; tuned
+                        for dialectical Arabic and Middle-Eastern cultural context, then
+                        deployed at the <strong>NEOM Exhibit Center</strong> in Saudi Arabia.
+                        The robot held conversations with visitors, conducted surveys, and
+                        navigated the cultural beats of a Saudi greeting without flinching.
+                    </p>
+
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">technology stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Dialectical Arabic</span>
+                            <span class="tech-tag">Speech recognition</span>
+                            <span class="tech-tag">Speech synthesis</span>
+                            <span class="tech-tag">ROS</span>
+                            <span class="tech-tag">Cultural adaptation</span>
+                            <span class="tech-tag">Social robotics</span>
+                        </div>
+                    </div>
+
+                    <div class="key-features">
+                        <h4 class="tech-stack-title">achievements</h4>
+                        <div class="features-grid">
+                            <div class="feature-item"><ion-icon name="language-outline" class="feature-icon"></ion-icon><span>Arabic language processing</span></div>
+                            <div class="feature-item"><ion-icon name="people-outline" class="feature-icon"></ion-icon><span>Cultural context adaptation</span></div>
+                            <div class="feature-item"><ion-icon name="chatbubbles-outline" class="feature-icon"></ion-icon><span>Natural conversation</span></div>
+                            <div class="feature-item"><ion-icon name="globe-outline" class="feature-icon"></ion-icon><span>NEOM deployment</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric"><div class="metric-value">NEOM</div><div class="metric-label">exhibit centre</div></div>
+                        <div class="metric"><div class="metric-value">ar-SA</div><div class="metric-label">NLP engine</div></div>
+                        <div class="metric"><div class="metric-value">HRI</div><div class="metric-label">social robotics</div></div>
+                    </div>
+
+                    <div class="project-context">
+                        <p class="project-description">
+                            <strong>NEOM</strong> is Saudi Arabia's $500&nbsp;billion futuristic smart-city
+                            project under Vision 2030. <strong>Furhat Robotics</strong> is a Swedish startup
+                            building social robots with human-like facial expressions &mdash; used in research,
+                            healthcare, education, and recruitment worldwide.
+                        </p>
+                    </div>
+
+                    <div class="project-screenshots">
+                        <div class="screenshot-container">
+                            <img src="/assets/img/portfolio/furhat-robot.png" alt="Furhat social robot" loading="lazy">
+                            <div class="screenshot-label">Furhat &mdash; human-like expressions</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPECIMEN 05 : ROS4HRI -->
+            <article class="specimen-entry" data-project="5">
+                <div class="specimen-index">
+                    <span class="s-label">Specimen</span>
+                    <span class="s-num">05</span>
+                </div>
+                <div class="specimen-body">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-tag">open-source · ROS · HRI infrastructure</span>
+                            <h3 class="project-title">ROS4HRI</h3>
+                            <p class="project-subtitle"><em>The framework now running inside every PAL Robotics commercial robot.</em></p>
+                        </div>
+                        <a href="https://github.com/ros4hri" target="_blank" rel="noopener" class="project-link">
+                            view on github <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+
+                    <p class="project-description">
+                        Social robots need to answer a deceptively hard question &mdash; <strong>who is
+                        in the room, and are they the same person they were a second ago?</strong> &mdash;
+                        while merging faces, bodies, voices, and identities from different ROS nodes
+                        that never agreed on a common schema. ROS4HRI is the answer: a standard,
+                        ROS-native toolkit for social signal processing, co-led with Séverin Lemaignan
+                        and presented as the tutorial workshop at <strong>IROS 2022 in Kyoto</strong>.
+                        Adopted by <strong>PAL Robotics</strong> as the default HRI stack across
+                        <i>ARI, TIAGo</i>, and the entire commercial fleet.
+                    </p>
+
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ROS / ROS2</span>
+                            <span class="tech-tag">Python · C++</span>
+                            <span class="tech-tag">OpenFace</span>
+                            <span class="tech-tag">OpenPose</span>
+                            <span class="tech-tag">Multi-party tracking</span>
+                            <span class="tech-tag">Social signal processing</span>
+                            <span class="tech-tag">Sensor fusion</span>
+                            <span class="tech-tag">Identity reconciliation</span>
+                        </div>
+                    </div>
+
+                    <div class="key-features">
+                        <h4 class="tech-stack-title">what it solves</h4>
+                        <div class="features-grid">
+                            <div class="feature-item"><ion-icon name="people-outline" class="feature-icon"></ion-icon><span>Multi-party tracking</span></div>
+                            <div class="feature-item"><ion-icon name="git-merge-outline" class="feature-icon"></ion-icon><span>Face / body / voice fusion</span></div>
+                            <div class="feature-item"><ion-icon name="finger-print-outline" class="feature-icon"></ion-icon><span>Stable person identifiers</span></div>
+                            <div class="feature-item"><ion-icon name="extension-puzzle-outline" class="feature-icon"></ion-icon><span>ROS-native integration</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric"><div class="metric-value">PAL</div><div class="metric-label">adopted by</div></div>
+                        <div class="metric"><div class="metric-value">IROS</div><div class="metric-label">'22 Kyoto workshop</div></div>
+                        <div class="metric"><div class="metric-value">OSS</div><div class="metric-label">MIT licensed</div></div>
+                        <div class="metric"><div class="metric-value">ARI</div><div class="metric-label">+ TIAGo fleet</div></div>
+                    </div>
+
+                    <div class="project-context">
+                        <p class="project-description">
+                            The paper &mdash; <i>&ldquo;ROS for Human-Robot Interaction&rdquo;</i>
+                            (IROS 2021, Mohamed &amp; Lemaignan) &mdash; is the reason there's a
+                            common language for social signals in ROS today. It is, quietly, the
+                            piece of work Youssef is most proud of: <strong>a thing researchers
+                            cite without knowing whose thesis it came out of</strong>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SPECIMEN 06 : NDA CONSULTANCY -->
+            <article class="specimen-entry redacted-entry" data-project="6">
+                <div class="specimen-index">
+                    <span class="s-label">Specimen</span>
+                    <span class="s-num">06</span>
+                </div>
+                <div class="specimen-body">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-tag">consultancy &middot; advisory &middot; confidential</span>
+                            <h3 class="project-title">
+                                <span class="bar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>,
+                                <span class="bar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>,
+                                <span class="bar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                &amp; <em>many more</em>
+                            </h3>
+                            <p class="project-subtitle"><em>The bulk of the week-to-week work &mdash; all under NDA.</em></p>
+                        </div>
+                        <span class="project-link disabled">
+                            under NDA <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                    </div>
+
+                    <p class="project-description">
+                        The five entries above are the public-facing tip of the iceberg. The
+                        larger share of what Youssef ships week-to-week is consultancy work
+                        across <strong>MENA, the EU, and the Gulf</strong> &mdash; architecting
+                        systems for AI startups, guiding enterprises on responsible LLM and
+                        vision-model rollouts, and occasionally building the first prototype
+                        himself. <strong>Most of these engagements are under signed NDA</strong>,
+                        which is why the interesting parts of this paragraph look like
+                        <span class="redact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        and <span class="redact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>,
+                        and why the client list isn't enumerable here. If one of these
+                        descriptions is describing <i>you</i>, feel free to reach out
+                        &mdash; the rest of the story is available over coffee.
+                    </p>
+
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">categories he can name</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">LLM architecture review</span>
+                            <span class="tech-tag">RAG rollouts</span>
+                            <span class="tech-tag">CV pipeline design</span>
+                            <span class="tech-tag">Responsible-AI strategy</span>
+                            <span class="tech-tag">MLOps on GCP</span>
+                            <span class="tech-tag">Go-to-market for AI products</span>
+                            <span class="tech-tag">AI literacy · Career180 (Egypt)</span>
+                            <span class="tech-tag">E3.Ventures portfolio (KSA)</span>
+                            <span class="tech-tag">Saudi university workshops</span>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric"><div class="metric-value">MENA</div><div class="metric-label">+ EU + Gulf</div></div>
+                        <div class="metric"><div class="metric-value">NDA</div><div class="metric-label">signed &times; n</div></div>
+                        <div class="metric"><div class="metric-value">∞</div><div class="metric-label">can't show</div></div>
+                        <div class="metric"><div class="metric-value">☕</div><div class="metric-label">ask over coffee</div></div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ───────────── SECTION 03 : THE MIRROR TEST (in-browser MediaPipe) ───────────── -->
+    <section class="section" id="experiment">
+        <header class="section-header">
+            <div class="section-number">Section 03 &middot; <b>experiment</b></div>
+            <h2 class="section-title">the <em>mirror test</em>.<br>try the tech <em>yourself</em>.</h2>
+            <p class="section-description">
+                A working demo of the open-source face-landmarking tech underneath ROS4HRI
+                &mdash; <strong>MediaPipe</strong>, compiled to WebAssembly and running 100%
+                on-device in your browser. 478 facial landmarks, 52 blendshapes, 30&nbsp;fps.
+                Smile, raise your eyebrows, or open your mouth wide and watch the page react.
+                <i>Nothing is uploaded or stored. When you close the panel, the camera stops.</i>
+            </p>
+        </header>
+
+        <div class="mirror" id="mirror">
+            <!-- Pre-activation card -->
+            <div class="mirror-activator" id="mirror-activator">
+                <span class="ma-badge">MediaPipe &middot; WebAssembly &middot; on-device</span>
+                <h3 class="ma-title">run the <em>face model</em>.</h3>
+                <p class="ma-body">
+                    Click to grant webcam access. An open-source face-landmarking model
+                    loads into your browser and runs locally. Your expressions drive three
+                    small visual effects &mdash; <i>smile for a burst of hearts, open your
+                    mouth wide for a goal celebration, raise your eyebrows to summon
+                    confetti</i>. That's it. No analysis is saved, sent, or inferred beyond
+                    those three triggers.
+                </p>
+                <button class="ma-btn" id="mirror-start" type="button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    begin the mirror test
+                </button>
+                <p class="ma-privacy">
+                    <b>100% on-device.</b>
+                    MediaPipe runs inside your browser via WebAssembly. Camera frames are
+                    processed locally and discarded immediately &mdash; nothing is uploaded,
+                    logged, or stored. Hit the close button (or leave the page) to release
+                    the camera.
+                </p>
+            </div>
+
+            <div class="mirror-error" id="mirror-error"></div>
+
+            <!-- Active stage -->
+            <div class="mirror-stage" id="mirror-stage">
+                <div class="mirror-view">
+                    <video id="mirror-video" playsinline muted autoplay></video>
+                    <canvas id="mirror-canvas"></canvas>
+                    <div class="mirror-status">
+                        <span class="m-dot" id="m-dot"></span>
+                        <span id="mirror-status-text">initialising</span>
+                    </div>
+                    <div class="mirror-fps" id="mirror-fps">— fps</div>
+                    <div class="mirror-affect-tag" id="mirror-affect-tag">
+                        <span id="affect-primary">—</span><em id="affect-primary-val">0.00</em>
+                    </div>
+                    <button class="mirror-close" id="mirror-close" type="button" aria-label="close mirror test">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <aside class="mirror-panel">
+                    <header>
+                        <h4>session_<span id="mirror-subj">—</span></h4>
+                        <span class="live-chip"><span class="lc-dot"></span> LIVE</span>
+                    </header>
+
+                    <section class="panel-sec">
+                        <h5>active blendshapes · top 5</h5>
+                        <ul class="blendbars" id="blendbars">
+                            <li class="gl-hint" style="list-style:none; font-family:var(--font-italic); font-style:italic; color:#8a7c6d">waiting for a face.</li>
+                        </ul>
+                    </section>
+
+                    <section class="panel-sec">
+                        <h5>playful signals (toy demo · local)</h5>
+                        <div class="affect-grid" id="affect-grid">
+                            <div class="affect-cell" data-name="joy">joy<span>0.00</span></div>
+                            <div class="affect-cell" data-name="surprise">surprise<span>0.00</span></div>
+                            <div class="affect-cell" data-name="focus">focus<span>0.00</span></div>
+                            <div class="affect-cell" data-name="calm">calm<span>0.00</span></div>
+                        </div>
+                        <p style="font-family:var(--font-italic); font-style:italic; font-size:0.85rem; color:#8a7c6d; margin-top:0.6rem; line-height:1.4;">
+                            Toy signals derived from blendshapes &mdash; not an affect model and not
+                            clinical. Nothing leaves your browser.
+                        </p>
+                    </section>
+
+                    <section class="panel-sec">
+                        <h5>gesture log</h5>
+                        <ul class="gesture-log" id="gesture-log">
+                            <li class="gl-hint">try a big smile.</li>
+                        </ul>
+                    </section>
+
+                    <section class="panel-sec">
+                        <h5>what each gesture does</h5>
+                        <ul class="gesture-hints">
+                            <li><b>smile</b><em>a small burst of hearts drifts past</em></li>
+                            <li><b>mouth open</b><em>GOAL celebration (a HighlightsHub nod)</em></li>
+                            <li><b>brows up</b><em>summon confetti &mdash; small, tasteful</em></li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ───────────── SECTION 04 : SIDE QUESTS (AI built for fun) ───────────── -->
+    <section class="section" id="side-quests">
+        <header class="section-header">
+            <div class="section-number">Section 04 &middot; <b>side quests</b></div>
+            <h2 class="section-title">What Youssef builds <em>on a Saturday</em>.</h2>
+            <p class="section-description">
+                When the companies are running on their own for an afternoon, the terminal
+                gets noisy. Local LLMs, VLMs, video generation, facial-expression trackers,
+                communication-style classifiers &mdash; <i>things nobody asked for, built
+                because they looked fun</i>. The one below is a Pokamind ad generated
+                end-to-end at his desk: local text-to-image for keyframes, local
+                image-to-video, local voiceover, local music, one ffmpeg command to stitch.
+            </p>
+        </header>
+
+        <div class="quests">
+            <figure class="quest-hero" id="quest-hero">
+                <video id="quest-video" src="/assets/video/pokamind-ad.mp4"
+                       preload="metadata" playsinline muted loop></video>
+                <div class="qh-overlay">
+                    <b>LOCAL · HOMEBREW</b>
+                    <span>Pokamind · ad spec · gen 1</span>
+                </div>
+                <div class="qh-controls">
+                    <button class="qh-btn" id="qh-play" type="button" aria-label="play">
+                        <ion-icon name="play"></ion-icon>
+                    </button>
+                </div>
+                <figcaption class="qh-footer">
+                    <span><em>&ldquo;the PhD, productised.&rdquo;</em></span>
+                    <span>ComfyUI · local VLM · local video-gen · FLUX · ffmpeg</span>
+                </figcaption>
+            </figure>
+
+            <div class="quest-list">
+                <div class="quest-item">
+                    <span class="q-badge">weekend build</span>
+                    <h4>A <em>communication-style</em> classifier on top of Whisper</h4>
+                    <p>Given a <i>consented</i> recording of a practice role-play, it times
+                       each turn and suggests one of four communication styles
+                       &mdash; <i>assertive / analytical / amiable / expressive</i> &mdash; as
+                       a self-review prompt. Trained on a tiny curated set plus synthetic
+                       role-play dialogues.</p>
+                    <div class="tags"><span>whisper</span><span>lora</span><span>local</span></div>
+                </div>
+
+                <div class="quest-item">
+                    <span class="q-badge">tinkering · personal</span>
+                    <h4>Real-time <em>facial-expression</em> landmarks on a laptop cam</h4>
+                    <p>Mediapipe landmarks piped through a tiny transformer, 32 ms/frame on
+                       a MacBook. <i>A personal weekend experiment on my own face</i> &mdash;
+                       not part of any product, not pointed at anyone else, writes to a
+                       ROS topic because old habits.</p>
+                    <div class="tags"><span>mediapipe</span><span>onnx</span><span>ros2</span></div>
+                </div>
+
+                <div class="quest-item">
+                    <span class="q-badge">proof of concept</span>
+                    <h4>Short-form <em>video generation</em>, entirely local</h4>
+                    <p>FLUX for keyframes, Wan 2.2 for motion, Chatterbox for voiceover,
+                       Stable Audio for score, ffmpeg for glue. No API calls. No cloud bills.
+                       <i>The ad on the left was made this way.</i></p>
+                    <div class="tags"><span>comfyui</span><span>flux</span><span>wan-2.2</span><span>ffmpeg</span></div>
+                </div>
+
+                <div class="quest-item">
+                    <span class="q-badge">toy</span>
+                    <h4>A <em>VLM</em> that describes the kitchen fridge at 3pm</h4>
+                    <p>Local Qwen2-VL pointed at a webcam, prompted hourly. Outputs a
+                       haiku about the state of lunch and whether it's time to grocery
+                       shop. <i>Technically useful.</i></p>
+                    <div class="tags"><span>qwen2-vl</span><span>ollama</span><span>cron</span></div>
+                </div>
+
+                <div class="quest-item">
+                    <span class="q-badge">research-adjacent · personal</span>
+                    <h4><em>Multimodal</em> signal fusion, v2 (lab code, cleaned up)</h4>
+                    <p>PhD code, refactored for fun. Thermal + RGB + audio prosody fused via
+                       a small cross-attention head. <i>Runs offline on my own device in my own
+                       home office</i> &mdash; a personal toy for replaying consented lab recordings,
+                       not a product and not pointed at anyone else.</p>
+                    <div class="tags"><span>pytorch</span><span>thermal</span><span>edge</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ───────────── SECTION 05 : PUBLICATIONS ───────────── -->
+    <section class="section" id="research">
+        <header class="section-header">
+            <div class="section-number">Section 05 &middot; <b>further reading</b></div>
+            <h2 class="section-title">The peer-reviewed <em>paper trail</em>.</h2>
+            <p class="section-description">
+                Six papers in Human-Robot Interaction, Affective Computing, and Social AI.
+                92 citations and counting &mdash; <i>published at HRI, RO-MAN, IROS, and the
+                International Journal of Social Robotics</i>.
+            </p>
+        </header>
+
+        <div class="pubs">
+            <div class="pub">
+                <span class="p-year">2025</span>
+                <div>
+                    <div class="p-title">Fusion in Context: A Multimodal Approach to <em>Affective State Recognition</em>
+                        <span class="p-venue">IEEE RO-MAN 2025 &middot; Mohamed, Lemaignan, Güneysu, Jensfelt, Smith</span>
+                    </div>
+                </div>
+                <span class="p-cite">peer-reviewed</span>
+            </div>
+            <div class="pub">
+                <span class="p-year">2025</span>
+                <div>
+                    <div class="p-title"><em>Are You an Expert?</em> Instruction Adaptation Using Multi-Modal Affect Detections with Thermal Imaging and Context
+                        <span class="p-venue">IEEE RO-MAN 2025 &middot; Mohamed et al.</span>
+                    </div>
+                </div>
+                <span class="p-cite">peer-reviewed</span>
+            </div>
+            <div class="pub">
+                <span class="p-year">2025</span>
+                <div>
+                    <div class="p-title"><em>Context Matters</em>: Understanding Socially Appropriate Affective Responses via Sentence Embeddings
+                        <span class="p-venue">ICSR + AI 2024, Lecture Notes in Computer Science vol. 15561, Springer</span>
+                    </div>
+                </div>
+                <span class="p-cite">peer-reviewed</span>
+            </div>
+            <div class="pub">
+                <span class="p-year">2024</span>
+                <div>
+                    <div class="p-title">Multi-modal Affect Detection Using <em>Thermal and Optical</em> Imaging in a Gamified Robotic Exercise
+                        <span class="p-venue">International Journal of Social Robotics, 16(5), 981–997</span>
+                    </div>
+                </div>
+                <span class="p-cite">57 cites</span>
+            </div>
+            <div class="pub">
+                <span class="p-year">2022</span>
+                <div>
+                    <div class="p-title">Automatic <em>Frustration Detection</em> Using Thermal Imaging
+                        <span class="p-venue">ACM / IEEE Int'l Conference on Human-Robot Interaction (HRI), 451–459</span>
+                    </div>
+                </div>
+                <span class="p-cite">22 cites</span>
+            </div>
+            <div class="pub">
+                <span class="p-year">2021</span>
+                <div>
+                    <div class="p-title"><em>ROS for Human-Robot Interaction</em>
+                        <span class="p-venue">IEEE/RSJ IROS 2021, 676–683 &middot; the paper that became ROS4HRI</span>
+                    </div>
+                </div>
+                <span class="p-cite">13 cites</span>
+            </div>
+        </div>
+
+        <div class="cta-container" style="margin-top: 2.5rem;">
+            <a href="/publications/" class="cta-button">
+                full publications list <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+            <a href="https://scholar.google.com/citations?user=43b1KXYAAAAJ" target="_blank" rel="noopener" class="cta-button-secondary">
+                google scholar <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a href="/about/" class="cta-button-secondary">
+                the longer version <ion-icon name="person-outline"></ion-icon>
+            </a>
+        </div>
+    </section>
+
+    <!-- ───────────── FOOTER ───────────── -->
+    <footer class="portfolio-footer">
+        <div>
+            <span class="sig">— Youssef.</span>
+            &copy; 2026 &middot; made with strong coffee &amp; stronger opinions in Barcelona
+        </div>
+        <div class="right">
+            <span id="footer-cursor">█</span> end of document &middot; type <b>GOAL</b> for surprise
+        </div>
+    </footer>
+
+    <!-- ───────────── SESSION HUD (local browser telemetry demo) ───────────── -->
+    <aside class="telemetry-hud" id="telemetry" aria-label="local session telemetry">
+        <div class="t-head" id="telemetry-head">
+            <span><span class="t-dot"></span> session · <b id="t-subject">local_0001</b></span>
+            <span class="t-arrow">▴</span>
+        </div>
+        <div class="t-body">
+            <div class="t-row"><span class="t-k">read progress</span><span class="t-v" id="t-engagement">—</span></div>
+            <div class="t-bar"><i id="t-engagement-bar" style="width:0%"></i></div>
+            <div class="t-row"><span class="t-k">dwell</span><span class="t-v" id="t-dwell">0s</span></div>
+            <div class="t-row"><span class="t-k">scroll depth</span><span class="t-v" id="t-scroll">0%</span></div>
+            <div class="t-row"><span class="t-k">cursor velocity</span><span class="t-v" id="t-vel">0 px/s</span></div>
+            <div class="t-row"><span class="t-k">mode</span><span class="t-v" id="t-state">orienting</span></div>
+            <div class="t-note" id="t-note">vanilla browser events · nothing stored · nothing sent.</div>
+        </div>
+    </aside>
+
+    <!-- ───────────── GOAL CELEBRATION (easter egg) ───────────── -->
+    <div class="celebration" id="celebration" aria-hidden="true">
+        <div class="goal-text">GOOO<em>AAL!</em></div>
+    </div>
+
+    <!-- ───────────── INTERACTIVE SCRIPTS ───────────── -->
+    <script>
+    (function() {
+        'use strict';
+
+        /* ═════════ SOUND (Web Audio API, synthesized — no external assets) ═════════
+           Off by default. User toggles via the catalog-bar button. Respectful. */
+        const Sound = (() => {
+            let ctx = null, master = null, on = false;
+            const ensure = () => {
+                if (ctx) return;
+                const AC = window.AudioContext || window.webkitAudioContext;
+                if (!AC) return;
+                ctx = new AC();
+                master = ctx.createGain();
+                master.gain.value = 0.18;
+                master.connect(ctx.destination);
+            };
+            const env = (node, attack, decay, sustain, release, peak = 1) => {
+                const t = ctx.currentTime;
+                node.gain.cancelScheduledValues(t);
+                node.gain.setValueAtTime(0, t);
+                node.gain.linearRampToValueAtTime(peak, t + attack);
+                node.gain.linearRampToValueAtTime(sustain, t + attack + decay);
+                node.gain.linearRampToValueAtTime(0, t + attack + decay + release);
+            };
+            const note = (freq, dur = 0.15, type = 'sine', peak = 0.6) => {
+                if (!on || !ctx) return;
+                const osc = ctx.createOscillator();
+                const g = ctx.createGain();
+                osc.type = type;
+                osc.frequency.value = freq;
+                g.gain.value = 0;
+                osc.connect(g); g.connect(master);
+                env(g, 0.005, 0.04, peak * 0.4, dur, peak);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.01 + dur);
+            };
+            const chord = (freqs, dur = 0.6, type = 'triangle') => {
+                freqs.forEach((f, i) => setTimeout(() => note(f, dur, type, 0.35), i * 60));
+            };
+            const click = () => note(3400, 0.025, 'square', 0.12);
+            const tick  = () => note(1800, 0.03, 'triangle', 0.2);
+            const blip  = () => note(880, 0.08, 'sine', 0.35);
+            const ok    = () => { note(660, 0.1, 'triangle'); setTimeout(() => note(990, 0.18, 'triangle'), 80); };
+            const scan  = () => chord([523, 659, 784], 0.3, 'sine');
+            const whistle = () => {
+                if (!on || !ctx) return;
+                const osc = ctx.createOscillator();
+                const g = ctx.createGain();
+                osc.type = 'square';
+                osc.frequency.setValueAtTime(1400, ctx.currentTime);
+                osc.frequency.linearRampToValueAtTime(1900, ctx.currentTime + 0.25);
+                osc.frequency.linearRampToValueAtTime(1400, ctx.currentTime + 0.5);
+                g.gain.value = 0;
+                osc.connect(g); g.connect(master);
+                env(g, 0.01, 0.05, 0.25, 0.5, 0.55);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.6);
+            };
+            const roar = () => {
+                if (!on || !ctx) return;
+                const buf = ctx.createBuffer(1, ctx.sampleRate * 1.8, ctx.sampleRate);
+                const data = buf.getChannelData(0);
+                for (let i = 0; i < data.length; i++) {
+                    data[i] = (Math.random() * 2 - 1) * (1 - i / data.length);
+                }
+                const src = ctx.createBufferSource();
+                src.buffer = buf;
+                const filt = ctx.createBiquadFilter();
+                filt.type = 'bandpass';
+                filt.frequency.value = 500;
+                filt.Q.value = 0.8;
+                const g = ctx.createGain();
+                g.gain.value = 0.4;
+                src.connect(filt); filt.connect(g); g.connect(master);
+                src.start();
+            };
+            return {
+                enable() { ensure(); on = true; if (ctx && ctx.state === 'suspended') ctx.resume(); blip(); },
+                disable() { on = false; },
+                click, tick, blip, ok, scan, whistle, roar,
+                isOn() { return on; },
+            };
+        })();
+
+        /* ═════════ Sound toggle (catalog bar) ═════════ */
+        const sBtn = document.getElementById('sound-toggle');
+        const sIcon = document.getElementById('sound-icon');
+        const sLabel = document.getElementById('sound-label');
+        sBtn && sBtn.addEventListener('click', () => {
+            if (Sound.isOn()) {
+                Sound.disable();
+                sBtn.classList.remove('on');
+                sIcon.setAttribute('name', 'volume-mute-outline');
+                sLabel.textContent = 'sound off';
+            } else {
+                Sound.enable();
+                sBtn.classList.add('on');
+                sIcon.setAttribute('name', 'volume-medium-outline');
+                sLabel.textContent = 'sound on';
+                Sound.scan();
+            }
+        });
+
+        /* ═════════ Letter-by-letter hero title reveal (word-aware, no mid-word breaks) ═════════ */
+        const title = document.getElementById('hero-title');
+        if (title) {
+            const wrap = document.createElement('div');
+            wrap.innerHTML = title.innerHTML;
+            let i = 0;
+            const walk = (node) => {
+                const children = Array.from(node.childNodes);
+                children.forEach(child => {
+                    if (child.nodeType === Node.TEXT_NODE) {
+                        const frag = document.createDocumentFragment();
+                        // Split into alternating word + whitespace tokens so we can wrap each word
+                        const tokens = child.textContent.split(/(\s+)/);
+                        tokens.forEach(tok => {
+                            if (tok.length === 0) return;
+                            if (/^\s+$/.test(tok)) {
+                                // Preserve visual space between words
+                                const s = document.createElement('span');
+                                s.className = 'sp';
+                                frag.appendChild(s);
+                            } else {
+                                // Wrap the word so letters inside can't break across lines.
+                                // Inline styles guarantee this works even if the CSS is cached/stale.
+                                const word = document.createElement('span');
+                                word.className = 'word';
+                                word.style.display = 'inline-block';
+                                word.style.whiteSpace = 'nowrap';
+                                for (const ch of tok) {
+                                    const s = document.createElement('span');
+                                    s.className = 'ltr';
+                                    s.textContent = ch;
+                                    s.style.animationDelay = (i * 28) + 'ms';
+                                    i++;
+                                    word.appendChild(s);
+                                }
+                                frag.appendChild(word);
+                            }
+                        });
+                        child.parentNode.replaceChild(frag, child);
+                    } else if (child.nodeType === Node.ELEMENT_NODE) {
+                        walk(child);
+                    }
+                });
+            };
+            walk(wrap);
+            title.innerHTML = wrap.innerHTML;
+        }
+
+        /* ═════════ Typewriter on Arabic subtitle ═════════ */
+        const ar = document.getElementById('typed-ar');
+        if (ar) {
+            const full = ar.textContent.trim();
+            ar.textContent = '';
+            ar.style.width = '0ch';
+            let tIdx = 0;
+            const typeLoop = () => {
+                if (tIdx > full.length) { ar.style.borderRight = '0'; return; }
+                ar.textContent = full.slice(0, tIdx);
+                tIdx++;
+                setTimeout(typeLoop, 55 + Math.random() * 40);
+            };
+            setTimeout(typeLoop, 1600);
+        }
+
+        /* ═════════ Stockholm → Barcelona clock ═════════ */
+        const clock = document.getElementById('clock');
+        const tickClock = () => {
+            if (!clock) return;
+            const t = new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/Madrid', hour12: false });
+            clock.textContent = t;
+        };
+        tickClock(); setInterval(tickClock, 1000);
+
+        /* ═════════ Copy-to-clipboard for contact chips ═════════ */
+        window.copyToClipboard = function (text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                const span = element.querySelector('span');
+                const original = span.textContent;
+                span.textContent = '✓ copied';
+                element.style.background = 'var(--thermal)';
+                element.style.color = 'var(--paper)';
+                element.style.borderColor = 'var(--thermal)';
+                Sound.ok();
+                setTimeout(() => {
+                    span.textContent = original;
+                    element.style.background = '';
+                    element.style.color = '';
+                    element.style.borderColor = '';
+                }, 1500);
+            });
+        };
+
+        /* ═════════ Smooth scroll for anchor links ═════════ */
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+
+        /* ═════════ Scroll-reveal for specimen entries + section titles ═════════ */
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${i * 60}ms`;
+                    entry.target.classList.add('animate-on-scroll');
+                    Sound.tick();
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        document.querySelectorAll('.specimen-entry').forEach(el => io.observe(el));
+
+        /* ═════════ Shared telemetry state (used by cursor + HUD) ═════════ */
+        const telemetry = { velocity: 0, dwell: 0, scroll: 0 };
+
+        /* ═════════ Fun eye tracking — thermal pupils follow the cursor ═════════ */
+        const pupilL = document.getElementById('pupil-L');
+        const pupilR = document.getElementById('pupil-R');
+        const frame  = document.getElementById('specimen-frame');
+        const EYE = { L: { cx: 44.2, cy: 43.9 }, R: { cx: 60.8, cy: 44.7 } };
+        const MAX_SHIFT = 2.6;
+        let lastMove = 0, lastX = 0, lastY = 0;
+        const onMove = (e) => {
+            const now = performance.now();
+            const dt = Math.max(1, now - lastMove);
+            telemetry.velocity = Math.hypot(e.clientX - lastX, e.clientY - lastY) / dt * 1000;
+            lastMove = now; lastX = e.clientX; lastY = e.clientY;
+            if (!frame || !pupilL || !pupilR) return;
+            const rect = frame.getBoundingClientRect();
+            const px = (e.clientX - rect.left) / rect.width * 100;
+            const py = (e.clientY - rect.top)  / rect.height * 100;
+            [['L', pupilL], ['R', pupilR]].forEach(([k, el]) => {
+                const dx = px - EYE[k].cx, dy = py - EYE[k].cy;
+                const len = Math.max(1, Math.hypot(dx, dy));
+                const shift = Math.min(len, MAX_SHIFT);
+                const tx = (dx / len) * shift;
+                const ty = (dy / len) * shift * 0.7; // squash vertical a touch
+                el.setAttribute('transform', `translate(${tx.toFixed(2)}, ${ty.toFixed(2)})`);
+            });
+        };
+        window.addEventListener('mousemove', onMove, { passive: true });
+
+        // Occasional blink — brief scaleY on the tracker groups
+        const doBlink = () => {
+            [pupilL, pupilR].forEach(el => {
+                if (!el) return;
+                el.style.transition = 'none';
+                el.style.transformOrigin = 'center';
+                el.classList.add('blink');
+                setTimeout(() => el.classList.remove('blink'), 120);
+            });
+            setTimeout(doBlink, 4500 + Math.random() * 3500);
+        };
+        setTimeout(doBlink, 3500);
+
+        /* ═════════ Subtle parallax tilt on the specimen photo ═════════
+           A gentle 3D tilt that follows the cursor across the specimen area.
+           Capped at ±3.5° with inertial smoothing, so it feels like weight. */
+        (() => {
+            const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const specimen = document.querySelector('.specimen');
+            const frm = document.getElementById('specimen-frame');
+            if (reduce || !specimen || !frm) return;
+            const MAX = 3.5;
+            let rafId = 0, tx = 0, ty = 0, cx = 0, cy = 0, active = false;
+            const tick = () => {
+                cx += (tx - cx) * 0.085;
+                cy += (ty - cy) * 0.085;
+                frm.style.transform = `rotateY(${cx.toFixed(2)}deg) rotateX(${cy.toFixed(2)}deg)`;
+                if (Math.abs(tx - cx) > 0.04 || Math.abs(ty - cy) > 0.04 || active) {
+                    rafId = requestAnimationFrame(tick);
+                } else {
+                    frm.style.transform = '';
+                    rafId = 0;
+                }
+            };
+            specimen.addEventListener('mousemove', (e) => {
+                const r = specimen.getBoundingClientRect();
+                const nx = (e.clientX - r.left) / r.width;
+                const ny = (e.clientY - r.top) / r.height;
+                tx = (nx - 0.5) * 2 * MAX;
+                ty = -(ny - 0.5) * 2 * MAX;
+                active = true;
+                if (!rafId) rafId = requestAnimationFrame(tick);
+            }, { passive: true });
+            specimen.addEventListener('mouseleave', () => {
+                tx = 0; ty = 0; active = false;
+                if (!rafId) rafId = requestAnimationFrame(tick);
+            });
+        })();
+
+        /* ═════════ Metric counters (existing .metric + new .stat-row) ═════════ */
+        const animate = (el, end, suffix) => {
+            const t0 = performance.now(), d = 1400;
+            const isFloat = !Number.isInteger(end);
+            const step = (t) => {
+                const p = Math.min((t - t0) / d, 1);
+                const ease = 1 - Math.pow(1 - p, 3);
+                const v = end * ease;
+                el.textContent = (isFloat ? v.toFixed(1) : Math.floor(v)) + (suffix || '');
+                if (p < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+        };
+        const mio = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const v = entry.target.querySelector('.metric-value');
+                if (v) {
+                    const m = v.textContent.match(/^(\d+(?:\.\d+)?)/);
+                    if (m) animate(v, parseFloat(m[1]), v.textContent.slice(m[1].length));
+                }
+                mio.unobserve(entry.target);
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.metric').forEach(m => mio.observe(m));
+
+        const statIO = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.querySelectorAll('[data-count]').forEach(el => {
+                    animate(el, parseFloat(el.dataset.count));
+                });
+                statIO.unobserve(entry.target);
+            });
+        }, { threshold: 0.3 });
+        const statRow = document.getElementById('stat-row');
+        if (statRow) statIO.observe(statRow);
+
+        /* ═════════ Blinking cursor in footer ═════════ */
+        const cur = document.getElementById('footer-cursor');
+        setInterval(() => { if (cur) cur.style.visibility = cur.style.visibility === 'hidden' ? 'visible' : 'hidden'; }, 600);
+
+        /* ═════════ Video control (click-to-play) ═════════ */
+        const vid = document.getElementById('quest-video');
+        const qHero = document.getElementById('quest-hero');
+        const qPlay = document.getElementById('qh-play');
+        const togglePlay = () => {
+            if (!vid) return;
+            if (vid.paused) {
+                vid.muted = !Sound.isOn();
+                vid.play();
+                qHero.classList.add('playing');
+                Sound.blip();
+            } else {
+                vid.pause();
+                qHero.classList.remove('playing');
+            }
+        };
+        qPlay && qPlay.addEventListener('click', togglePlay);
+        vid && vid.addEventListener('click', togglePlay);
+        vid && vid.addEventListener('play', () => qHero.classList.add('playing'));
+        vid && vid.addEventListener('pause', () => qHero.classList.remove('playing'));
+
+        /* ═════════ Session HUD — vanilla browser telemetry demo (unrelated to Pokamind) ═════════ */
+        const hud = document.getElementById('telemetry');
+        const hudHead = document.getElementById('telemetry-head');
+        const tE = document.getElementById('t-engagement');
+        const tEB = document.getElementById('t-engagement-bar');
+        const tD = document.getElementById('t-dwell');
+        const tS = document.getElementById('t-scroll');
+        const tV = document.getElementById('t-vel');
+        const tSt = document.getElementById('t-state');
+        const tN = document.getElementById('t-note');
+        const tSubj = document.getElementById('t-subject');
+        tSubj.textContent = 'local_' + String(Math.floor(Math.random() * 9000) + 1000);
+        hudHead && hudHead.addEventListener('click', () => { hud.classList.toggle('open'); Sound.click(); });
+
+        // auto-open HUD after a moment (so people notice it)
+        setTimeout(() => { if (hud) hud.classList.add('open'); }, 3500);
+
+        const t0 = performance.now();
+        let lastScroll = 0, scrollDir = '', scrollJitter = 0;
+        window.addEventListener('scroll', () => {
+            const y = window.scrollY;
+            scrollDir = y > lastScroll ? 'down' : 'up';
+            if ((y > lastScroll) !== (window._lastDir === 'down')) scrollJitter++;
+            window._lastDir = scrollDir;
+            lastScroll = y;
+            telemetry.scroll = Math.min(100, (y + window.innerHeight) / document.body.scrollHeight * 100);
+        }, { passive: true });
+
+        const NOTES = [
+            'vanilla browser events · nothing stored · nothing sent.',
+            'dwell + scroll + cursor · computed locally.',
+            'no cookies. no tracking. this clears when the tab does.',
+            'minimise with the ▴ arrow above.',
+            'just an on-page demo of browser state.',
+        ];
+        let noteIdx = 0;
+        setInterval(() => {
+            if (!tN) return;
+            noteIdx = (noteIdx + 1) % NOTES.length;
+            tN.style.opacity = 0;
+            setTimeout(() => { tN.textContent = NOTES[noteIdx]; tN.style.opacity = 1; }, 180);
+        }, 6500);
+        if (tN) { tN.style.transition = 'opacity 180ms ease'; }
+
+        const hudTick = () => {
+            const now = performance.now();
+            telemetry.dwell = (now - t0) / 1000;
+            // gentle decay of velocity
+            telemetry.velocity *= 0.9;
+
+            const depth = telemetry.scroll;
+            const v = telemetry.velocity;
+            // engagement = normalized function of dwell, depth, and non-chaotic motion
+            const calm = Math.max(0, 1 - Math.min(1, v / 2000));
+            const engagement = Math.min(100,
+                15 + Math.min(25, telemetry.dwell * 0.8) + depth * 0.5 + calm * 20 - scrollJitter * 0.6
+            );
+            tE.textContent = engagement.toFixed(0) + '%';
+            tEB.style.width = engagement.toFixed(0) + '%';
+            tD.textContent = telemetry.dwell.toFixed(0) + 's';
+            tS.textContent = depth.toFixed(0) + '%';
+            tV.textContent = v.toFixed(0) + ' px/s';
+
+            let state = 'orienting';
+            if (telemetry.dwell < 3) state = 'orienting';
+            else if (v > 1200) state = 'skimming';
+            else if (v < 80 && depth > 20) state = 'reading';
+            else if (depth > 80) state = 'finishing';
+            else state = 'browsing';
+            tSt.textContent = state;
+            tSt.style.color = state === 'reading' ? 'var(--thermal)' :
+                              state === 'skimming' ? '#f59e0b' :
+                              state === 'finishing' ? '#34d399' : 'var(--thermal-glow)';
+            requestAnimationFrame(hudTick);
+        };
+        requestAnimationFrame(hudTick);
+
+        /* ═════════ Easter egg : type G-O-A-L → celebration ═════════ */
+        const keybuf = [];
+        document.addEventListener('keydown', (e) => {
+            if (['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) return;
+            keybuf.push(e.key.toUpperCase());
+            if (keybuf.length > 4) keybuf.shift();
+            if (keybuf.join('') === 'GOAL') {
+                celebrate();
+                keybuf.length = 0;
+            }
+        });
+
+        /* Heart-burst — used by the smile gesture in the Mirror Test */
+        window.heartBurst = function (count = 14) {
+            const glyphs = ['♥', '❤︎', '♡'];
+            for (let i = 0; i < count; i++) {
+                const p = document.createElement('span');
+                p.className = 'heart-piece';
+                p.textContent = glyphs[i % glyphs.length];
+                p.style.left = (10 + Math.random() * 80) + 'vw';
+                p.style.fontSize = (16 + Math.random() * 14) + 'px';
+                p.style.animationDuration = (2.8 + Math.random() * 1.5) + 's';
+                p.style.animationDelay = (Math.random() * 0.35) + 's';
+                p.style.color = Math.random() < 0.4 ? 'var(--thermal)' : 'var(--specimen-red)';
+                document.body.appendChild(p);
+                setTimeout(() => p.remove(), 5000);
+            }
+        };
+
+        const celebrate = () => {
+            const cel = document.getElementById('celebration');
+            if (!cel) return;
+            cel.classList.add('on');
+            Sound.whistle();
+            setTimeout(() => Sound.roar(), 250);
+
+            const colors = ['#d94f1a', '#f59e0b', '#2a5956', '#a63a26', '#1b140e', '#8b6e3c'];
+            for (let i = 0; i < 120; i++) {
+                const piece = document.createElement('span');
+                piece.className = 'confetti-piece';
+                piece.style.left = Math.random() * 100 + 'vw';
+                piece.style.background = colors[i % colors.length];
+                piece.style.animationDuration = (2.5 + Math.random() * 2) + 's';
+                piece.style.animationDelay = (Math.random() * 0.4) + 's';
+                piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+                cel.appendChild(piece);
+            }
+            setTimeout(() => {
+                cel.classList.remove('on');
+                cel.querySelectorAll('.confetti-piece').forEach(p => p.remove());
+            }, 4500);
+        };
+
+        /* ═════════ Initial scan blip on load ═════════ */
+        window.addEventListener('load', () => {
+            // Only plays if sound is enabled; otherwise silent no-op.
+            Sound.scan();
+        });
+
+        /* ═════════════════════════════════════════════════════════════════════
+           EXPERIMENT 01 — THE MIRROR TEST
+           In-browser MediaPipe FaceLandmarker. WASM, no uploads. Gestures
+           control the page. Same tech that powered ROS4HRI.
+           ═════════════════════════════════════════════════════════════════════ */
+        const Mirror = (() => {
+            const MP_VERSION = '0.10.9';
+            const MODEL_URL = 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task';
+
+            const $ = (id) => document.getElementById(id);
+            const activator = $('mirror-activator');
+            const stage = $('mirror-stage');
+            const video = $('mirror-video');
+            const canvas = $('mirror-canvas');
+            const statusText = $('mirror-status-text');
+            const dot = $('m-dot');
+            const fpsEl = $('mirror-fps');
+            const errorEl = $('mirror-error');
+            const startBtn = $('mirror-start');
+            const closeBtn = $('mirror-close');
+            const subjEl = $('mirror-subj');
+            const affectPrimary = $('affect-primary');
+            const affectPrimaryVal = $('affect-primary-val');
+            const affectGrid = $('affect-grid');
+            const blendbars = $('blendbars');
+            const gestureLog = $('gesture-log');
+
+            let stream = null;
+            let landmarker = null;
+            let drawUtils = null;
+            let FL = null;       // FaceLandmarker class ref
+            let rafId = null;
+            let running = false;
+            let lastTs = performance.now();
+            let frames = 0;
+            let lastFpsUpdate = performance.now();
+
+            const gestureState = {
+                smileHold: 0, heartsFired: false, heartsCooldown: 0,
+                jawHold: 0, goalFired: false, goalCooldown: 0,
+                browHold: 0, confettiFired: false, confettiCooldown: 0,
+            };
+
+            const showError = (msg) => {
+                errorEl.textContent = msg;
+                errorEl.classList.add('on');
+                statusText.textContent = 'error';
+                dot.classList.add('off');
+            };
+
+            const logGesture = (text) => {
+                gestureLog.querySelectorAll('.gl-hint').forEach(h => h.remove());
+                const li = document.createElement('li');
+                const stamp = new Date().toTimeString().slice(0, 8);
+                li.textContent = `${stamp}  ·  ${text}`;
+                gestureLog.insertBefore(li, gestureLog.firstChild);
+                while (gestureLog.children.length > 6) gestureLog.lastChild.remove();
+            };
+
+            const start = async () => {
+                startBtn.disabled = true;
+                startBtn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon> loading model…';
+                errorEl.classList.remove('on');
+
+                // 1) Camera permission — request a modest resolution for low CPU/GPU load
+                try {
+                    stream = await navigator.mediaDevices.getUserMedia({
+                        video: {
+                            width: { ideal: 640 },
+                            height: { ideal: 480 },
+                            frameRate: { ideal: 24, max: 30 },
+                            facingMode: 'user'
+                        },
+                        audio: false
+                    });
+                } catch (err) {
+                    startBtn.disabled = false;
+                    startBtn.innerHTML = '<ion-icon name="videocam-outline"></ion-icon> begin the mirror test';
+                    showError('Camera access was blocked or unavailable. The experiment needs webcam permission; nothing is recorded or uploaded — it runs locally.');
+                    activator.style.display = 'grid';
+                    return;
+                }
+
+                video.srcObject = stream;
+                await video.play().catch(() => {});
+
+                // 2) Load MediaPipe Tasks Vision (lazy ESM import, ~5MB WASM)
+                statusText.textContent = 'loading face model';
+                activator.style.display = 'none';
+                stage.classList.add('active');
+                document.body.classList.add('mirror-open');
+                subjEl.textContent = String(Math.floor(Math.random() * 9000) + 1000);
+
+                try {
+                    const vision = await import(`https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MP_VERSION}/vision_bundle.mjs`);
+                    const { FaceLandmarker, FilesetResolver, DrawingUtils } = vision;
+                    FL = FaceLandmarker;
+
+                    const fileset = await FilesetResolver.forVisionTasks(
+                        `https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MP_VERSION}/wasm`
+                    );
+
+                    landmarker = await FaceLandmarker.createFromOptions(fileset, {
+                        baseOptions: {
+                            modelAssetPath: MODEL_URL,
+                            delegate: 'GPU',
+                        },
+                        outputFaceBlendshapes: true,
+                        outputFacialTransformationMatrixes: false,
+                        runningMode: 'VIDEO',
+                        numFaces: 1,
+                    });
+
+                    const ctx = canvas.getContext('2d');
+                    drawUtils = new DrawingUtils(ctx);
+
+                    statusText.textContent = 'observing';
+                    Sound.scan();
+                    running = true;
+                    loop();
+                } catch (err) {
+                    console.error(err);
+                    showError('Face model failed to load. This happens when CDN access is blocked, the browser lacks WebGL/WebGPU, or the device is offline. Close this panel and try again once connectivity is back.');
+                }
+            };
+
+            const stop = () => {
+                running = false;
+                if (rafId) cancelAnimationFrame(rafId);
+                rafId = null;
+                if (stream) {
+                    stream.getTracks().forEach(t => t.stop());
+                    stream = null;
+                }
+                if (video) { video.pause(); video.srcObject = null; }
+                if (landmarker) { try { landmarker.close(); } catch (e) {} landmarker = null; }
+                stage.classList.remove('active');
+                activator.style.display = 'grid';
+                document.body.classList.remove('mirror-open');
+                startBtn.disabled = false;
+                startBtn.innerHTML = '<ion-icon name="videocam-outline"></ion-icon> run it again';
+            };
+
+            const renderBlendBars = (blendshapes) => {
+                const top = [...blendshapes]
+                    .filter(c => c.categoryName && c.categoryName !== '_neutral')
+                    .sort((a, b) => b.score - a.score)
+                    .slice(0, 5);
+                blendbars.innerHTML = top.map(c => {
+                    const label = c.categoryName.replace(/([A-Z])/g, ' $1').toLowerCase();
+                    const pct = (c.score * 100).toFixed(0);
+                    return `<li>
+                        <span class="bb-name">${label}</span>
+                        <span class="bb-bar"><i style="width:${pct}%"></i></span>
+                        <span class="bb-val">${c.score.toFixed(2)}</span>
+                    </li>`;
+                }).join('');
+            };
+
+            const setAffect = (affects) => {
+                let maxK = 'calm', maxV = 0;
+                Object.entries(affects).forEach(([k, v]) => {
+                    const cell = affectGrid.querySelector(`[data-name="${k}"] span`);
+                    if (cell) cell.textContent = v.toFixed(2);
+                    if (v > maxV) { maxV = v; maxK = k; }
+                });
+                affectGrid.querySelectorAll('.affect-cell').forEach(c => {
+                    c.classList.toggle('primary', c.dataset.name === maxK);
+                });
+                affectPrimary.textContent = maxK;
+                affectPrimaryVal.textContent = maxV.toFixed(2);
+            };
+
+            const handleGestures = (signals, now) => {
+                const { smile, brow, jaw } = signals;
+                const SMILE_T = 0.45, BROW_T = 0.45, JAW_T = 0.4;
+                const HOLD_SMILE = 700, HOLD_BROW = 500, HOLD_JAW = 350;
+
+                // Smile held → hearts burst (4s cooldown)
+                if (smile > SMILE_T) {
+                    if (!gestureState.smileHold) gestureState.smileHold = now;
+                    if (!gestureState.heartsFired &&
+                        now - gestureState.smileHold > HOLD_SMILE &&
+                        now > gestureState.heartsCooldown) {
+                        window.heartBurst(16);
+                        Sound.ok();
+                        logGesture('smile held → hearts');
+                        gestureState.heartsFired = true;
+                        gestureState.heartsCooldown = now + 4000;
+                    }
+                } else {
+                    gestureState.smileHold = 0;
+                    gestureState.heartsFired = false;
+                }
+
+                // Brows up → confetti burst (2s cooldown)
+                if (brow > BROW_T) {
+                    if (!gestureState.browHold) gestureState.browHold = now;
+                    if (!gestureState.confettiFired &&
+                        now - gestureState.browHold > HOLD_BROW &&
+                        now > gestureState.confettiCooldown) {
+                        tinyConfetti();
+                        Sound.blip();
+                        logGesture('brows up → confetti');
+                        gestureState.confettiFired = true;
+                        gestureState.confettiCooldown = now + 2500;
+                    }
+                } else {
+                    gestureState.browHold = 0;
+                    gestureState.confettiFired = false;
+                }
+
+                // Mouth wide open → GOAL (6s cooldown)
+                if (jaw > JAW_T) {
+                    if (!gestureState.jawHold) gestureState.jawHold = now;
+                    if (!gestureState.goalFired &&
+                        now - gestureState.jawHold > HOLD_JAW &&
+                        now > gestureState.goalCooldown) {
+                        celebrate();
+                        logGesture('mouth open → GOAL');
+                        gestureState.goalFired = true;
+                        gestureState.goalCooldown = now + 6000;
+                    }
+                } else {
+                    gestureState.jawHold = 0;
+                    gestureState.goalFired = false;
+                }
+            };
+
+            // Throttle detection to ~15 fps — half the work, gestures stay snappy
+            const DETECT_INTERVAL_MS = 66;
+            let lastDetect = 0;
+            let lastResults = null;
+
+            const loop = () => {
+                if (!running || !landmarker) return;
+                if (video.readyState < 2 || !video.videoWidth) {
+                    rafId = requestAnimationFrame(loop);
+                    return;
+                }
+
+                // Keep canvas matched to source resolution
+                if (canvas.width !== video.videoWidth) {
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                }
+
+                const now = performance.now();
+
+                // Only run the model at most once per interval; reuse last results otherwise
+                if (now - lastDetect >= DETECT_INTERVAL_MS) {
+                    try {
+                        lastResults = landmarker.detectForVideo(video, now);
+                        lastDetect = now;
+                        frames++;
+                    } catch (e) {
+                        rafId = requestAnimationFrame(loop);
+                        return;
+                    }
+                }
+                const results = lastResults;
+
+                // FPS (detection rate)
+                if (now - lastFpsUpdate > 500) {
+                    const fps = (frames * 1000) / (now - lastFpsUpdate);
+                    fpsEl.textContent = fps.toFixed(0) + ' fps';
+                    frames = 0;
+                    lastFpsUpdate = now;
+                }
+
+                const ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                if (results && results.faceLandmarks && results.faceLandmarks.length > 0) {
+                    const lms = results.faceLandmarks[0];
+
+                    // Minimal overlay — key features only (no tessellation mesh)
+                    drawUtils.drawConnectors(lms, FL.FACE_LANDMARKS_FACE_OVAL,
+                        { color: '#d94f1a', lineWidth: 1.6 });
+                    drawUtils.drawConnectors(lms, FL.FACE_LANDMARKS_LIPS,
+                        { color: '#f59e0b', lineWidth: 1.4 });
+                    drawUtils.drawConnectors(lms, FL.FACE_LANDMARKS_LEFT_EYE,
+                        { color: '#f59e0b', lineWidth: 1.4 });
+                    drawUtils.drawConnectors(lms, FL.FACE_LANDMARKS_RIGHT_EYE,
+                        { color: '#f59e0b', lineWidth: 1.4 });
+                    drawUtils.drawConnectors(lms, FL.FACE_LANDMARKS_LEFT_EYEBROW,
+                        { color: '#34d399', lineWidth: 1.4 });
+                    drawUtils.drawConnectors(lms, FL.FACE_LANDMARKS_RIGHT_EYEBROW,
+                        { color: '#34d399', lineWidth: 1.4 });
+
+                    // Blendshapes → signals → affect
+                    if (results.faceBlendshapes && results.faceBlendshapes.length > 0) {
+                        const cats = results.faceBlendshapes[0].categories;
+                        const by = {};
+                        cats.forEach(c => { by[c.categoryName] = c.score; });
+
+                        renderBlendBars(cats);
+
+                        const smile  = ((by.mouthSmileLeft || 0) + (by.mouthSmileRight || 0)) / 2;
+                        const frown  = ((by.mouthFrownLeft || 0) + (by.mouthFrownRight || 0)) / 2;
+                        const brow   = ((by.browInnerUp || 0) + (by.browOuterUpLeft || 0) + (by.browOuterUpRight || 0)) / 3;
+                        const jaw    = by.jawOpen || 0;
+                        const squint = ((by.eyeSquintLeft || 0) + (by.eyeSquintRight || 0)) / 2;
+
+                        const affects = {
+                            joy:      Math.max(0, Math.min(1, smile * 2.0 + brow * 0.2 - frown * 0.8)),
+                            surprise: Math.max(0, Math.min(1, brow * 0.7 + jaw * 1.3 - smile * 0.3)),
+                            focus:    Math.max(0, Math.min(1, squint * 1.6 - smile * 0.4 - jaw * 0.5)),
+                            calm:     Math.max(0, Math.min(1, 0.85 - smile - brow - jaw - squint - frown)),
+                        };
+                        setAffect(affects);
+                        handleGestures({ smile, brow, jaw }, now);
+                    }
+                } else {
+                    blendbars.innerHTML = '<li class="gl-hint" style="list-style:none; font-family:var(--font-italic); font-style:italic; color:#8a7c6d">no face detected. come closer.</li>';
+                }
+
+                rafId = requestAnimationFrame(loop);
+            };
+
+            // Tiny confetti — independent of the GOAL celebration
+            function tinyConfetti() {
+                const colors = ['#d94f1a', '#f59e0b', '#2a5956', '#a63a26'];
+                for (let i = 0; i < 42; i++) {
+                    const piece = document.createElement('span');
+                    piece.className = 'confetti-piece';
+                    piece.style.position = 'fixed';
+                    piece.style.left = (10 + Math.random() * 80) + 'vw';
+                    piece.style.top = '-20px';
+                    piece.style.background = colors[i % colors.length];
+                    piece.style.animationDuration = (1.8 + Math.random() * 1.6) + 's';
+                    piece.style.animationDelay = (Math.random() * 0.3) + 's';
+                    piece.style.zIndex = 90;
+                    piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    document.body.appendChild(piece);
+                    setTimeout(() => piece.remove(), 4500);
+                }
+            }
+
+            startBtn.addEventListener('click', start);
+            closeBtn.addEventListener('click', stop);
+
+            // Cleanup on unload
+            window.addEventListener('beforeunload', stop);
+
+            return { start, stop };
+        })();
+
+    })();
+    </script>
+</body>
+</html>
